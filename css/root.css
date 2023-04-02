@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 :root{
 
@@ -35,4 +36,11 @@
     --font_margin_top: 2rem;
     --footer_padding: 1rem 0 1rem 0;
     
+
+    /* AboutUs part */
+    
+    --font_family: 'Inter', sans-serif;
+    --information_width:  calc(60% - 2rem);
+    --information_margin_left: 2rem;
+    --information_margin_bottom: 1rem;
 }
