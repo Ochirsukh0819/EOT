@@ -41,6 +41,24 @@
     </header>
 
     <main>
+
+        <section class="progress_bar"> 
+            <section class="">
+                <picture>
+                    <img src="" alt="order">
+                </picture>
+                <span class="circle">1</span>
+                <span class="circle">2</span>
+                <span class="circle">3</span>
+                <div  class="line">
+                    <span class="indicator"></span>
+                </div>
+            </section>
+        </section>
+
+
+    <section class="main_order">
+
         <aside class="cart">
             <section class="caption">
                 <div></div>
@@ -133,24 +151,23 @@
             </section>
         </aside>
 
-
-        <section class="Hurgeltiin_zurag"> 
-        </section>
-
-        <section class="Hurgeltiin_input">
-            <section>
+        <section class="order_information">
+            <section class="order_title">
                 <h2>Хүргэлтийн мэдээлэл</h2>
+                <hr>
                 <p>"Та хүргэлтийн дэлгэрэнгүй мэдээллээ оруулна уу"</p>
             </section>
 
     
-             <section class="Hurgeltiin_ner_hayg">
+             <section class="order_address">
+
                 <form action="/action_page.php">
+    
                     <label for="fname">Нэр:</label>
-                    <input type="text" id="fname" name="fname"><br><br>
+                    <input type="text" id="fname" name="fname">
                     
                     <label for="Phone">Утас:</label>
-                    <input type="text" id="phone" name="phone"><br><br>
+                    <input type="text" id="phone" name="phone">
 
                     <label for="Duureg">Дүүрэг:</label> 
                     <!-- HTML Dropdown list -->
@@ -161,7 +178,7 @@
                         <option value="SHD">Сонгино хайрхан дүүрэг</option>
                         <option value="CHD">Чингэлтэй дүүрэг</option>
                         <option value="HUD">Хан-Уул дүүрэг</option>
-                    </select> <br><br>
+                    </select>
 
                     <label for="Horoo">Хороо:</label> 
                     <select name="Horoo" id="Horoo-id">  
@@ -175,16 +192,16 @@
                         <option value="H_8">8-р хороо</option>
                         <option value="H_9">9-р хороо</option>
                         <option value="H_10">10-р хороо</option>
-                    </select> <br><br>
+                    </select> 
                     
                     <label for="Bair">Байр:</label>
-                    <input type="text" id="Bair" name="Bair"><br><br>
+                    <input type="text" id="Bair" name="Bair">
 
                     <label for="Orts">Орц:</label>
-                    <input type="text" id="Orts" name="Orts"><br><br>
+                    <input type="text" id="Orts" name="Orts">
 
                     <label for="Toot">Тоот:</label>
-                    <input type="text" id="Toot" name="Toot"><br><br>
+                    <input type="text" id="Toot" name="Toot">
 
                     <button type="Butsah">Буцах</button>
                     <button type="Urgeljluuleh">Үргэлжлүүлэх</button>
@@ -195,9 +212,10 @@
         </section>
 
 
-        <section class="Tulburiin_Heseg">
+        <section class="payment">
             <section>
                 <h2>Төлбөр төлөх хэсэг</h2>
+                <hr>
                 <p>"Та төлбөр төлөх хэлбэрээ сонгоно уу"</p>
             </section>
              <section class="Tulbur">
@@ -214,11 +232,13 @@
                     <img src="" alt="CreditCard">
                 </picture>
 
-                <p>Нийт үнэ 19,998₮</p>
-
+                <p>Нийт Үнэ</p>
+                <p> 19,998₮</p>
                 <button type="Butsah">Буцах</button>
             </section>
         </section>
+
+    </section>
 
         
     </main>
