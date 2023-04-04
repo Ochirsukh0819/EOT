@@ -6,6 +6,7 @@
   --main_color: #D0353C;
   --main_width: 100%;
   --main_height: 100%;
+  --main_bg_color: #D9D9D9;
 
     /*header part */ 
     --header_background: #FFFFFF;     
@@ -43,4 +44,6 @@
     --information_width:  calc(60% - 2rem);
     --information_margin_left: 2rem;
     --information_margin_bottom: 1rem;
+    --black_color: black;
+    --white_color: white;
 }
