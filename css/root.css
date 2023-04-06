@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 :root{
 
   --main_color: #D0353C;
@@ -46,4 +46,9 @@
     --information_margin_bottom: 1rem;
     --black_color: black;
     --white_color: white;
+
+    /* products */ 
+    --product_fonts : 'Mulish' , sans-serif;
+    --product_color: #4A4444;
+    --product_font_size: 1rem;
 }
