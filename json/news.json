@@ -1,0 +1,26 @@
+[
+  {
+    "image" : "./aboutUs_image/news1.png",
+    "title" : "Бяслаган пицца худалдаанд гарлаа",
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam ",
+    "date" : "2020.03.11"
+  },
+  {
+    "image" : "./aboutUs_image/news2.png",
+    "title" : "Тахианы махан пицца худалдаанд гарлаа",
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam ",
+    "date" : "2020.03.11"
+  },
+  {
+    "image" : "./aboutUs_image/news3.png",
+    "title" : "Pizza making day хөтөлбөр зохион байгуулагдлаа",
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam ",
+    "date" : "2020.03.11"
+  },
+  {
+    "image" : "./aboutUs_image/news4.png",
+    "title" : "Pizza hut зурхай",
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam ",
+    "date" : "2020.03.11"
+  }
+]
