@@ -1,6 +1,6 @@
 @import url('root.css');
 
-*{
+* {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
@@ -104,45 +104,45 @@ body{
     font-size: var(--title_font_size);
 }
 
-.medeenvvd{
+#medeenvvd{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 18rem 18rem;
     margin-top: 2rem;
 }
 
-.medeenvvd > .neg_medee{
+#medeenvvd > .neg_medee{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.medeenvvd > .neg_medee > picture img{
+#medeenvvd > .neg_medee > picture img{
     width: 15rem;
     aspect-ratio: initial;
     height: auto;
 }
 
-.medeenvvd > .neg_medee > section{
+#medeenvvd > .neg_medee > section{
     width: var(--information_width);
     display: flex;
     flex-direction: column;
     margin-left: var(--information_margin_left);
 }
 
-.medeenvvd > .neg_medee h2{
+#medeenvvd > .neg_medee h2{
     font-family: var(--header_footer_font_family);
     font-size: 1.25rem;
     margin-bottom: var(--information_margin_bottom);
 }
 
-.medeenvvd > .neg_medee p{
+#medeenvvd > .neg_medee p{
     font-weight: normal;
     font-family: var(--header_footer_font_family);
     text-align: justify;
 }
 
-.medeenvvd > .neg_medee > section > .date{
+#medeenvvd > .neg_medee > section > .date{
     margin-top: 1rem;
    display: flex;
    justify-content: flex-end;

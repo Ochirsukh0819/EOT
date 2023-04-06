@@ -24,6 +24,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover; 
 }
+.Slider >  picture > img{
+    width: 100%;
+    aspect-ratio: initial;
+}
 
 /*Product*/
 .product .product_title{
@@ -36,7 +40,7 @@ body{
     font-size: var(--title_font_size);
 }
 
-#red_line{
+.red_line{
     width: 5.625rem;
     height: 0.01rem;;
     margin: var(--title_margin_top) 0px;
@@ -67,7 +71,7 @@ body{
     color: black;
     padding: 0.5rem;
     text-align: center;
-   
+
 }
 
 .products:hover .overlay_text{
@@ -96,6 +100,7 @@ body{
     display: grid; 
     justify-content: center;
     align-items: center ;
+    gap: 1rem;
     margin-top: 3.75rem;
 }
 
@@ -134,9 +139,4 @@ body{
 
 .news1_part > .news1_title{
     opacity: 0;
-}
-
-@media screen and (min-width: 1020px){
-
-   
 }
