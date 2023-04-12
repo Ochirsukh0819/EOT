@@ -1,33 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Таван Богд Фүүдс Пицца ххк, Tavanbogd Foods Pizza, Пицца хат, Pizza hut">
-    <meta name="description" content="Таван Богд Фүүдс Пицца ххк, Tavanbogd Foods Pizza  Пицца хат,Pizza hut  албан ёсны бүтээгдэхүүний танилцуулга,бүтээгдэхүүний захиалга, бүтээгдэхүүний хүргэлтийн бүс, компаны танилцуулга, байгууллагатай холбоотой, 
-    мэдээ мэдээлэл бүхий веб сайт.">
-    <meta name="keywords" content="пицца, пицца хат, pizza hut, пиццаны багц,
-    Маханд дурлагсад пицца, Meat-lover pizza, Пепперони,Супер Суприм пицца, Хавайн пицца, Бяслагт пицца, 
-    Ногоонд Дурлагсад пицца,  Таван Богд Фүүдс Пицца ххк, Tavanbogd Foods Pizza">
-    <meta name="author" content="Pizza hut Х.Очирсүх, М.Тэмүүлэн, Н.Эрдэмбилэг">
-    <meta property="og:title" content="Pizza Hut ">
-    <meta property="og:description" content="Таван Богд Фүүдс Пицца ххк, Tavanbogd Foods Pizza  Пицца хат,Pizza hut  албан ёсны бүтээгдэхүүний танилцуулга,бүтээгдэхүүний захиалга, бүтээгдэхүүний хүргэлтийн бүс, компаны танилцуулга, байгууллагатай холбоотой, 
-    мэдээ мэдээлэл бүхий веб сайт.">
-    <meta property="og:url" content="https://ochirsukh0819.github.io/EOT/">
-    <title>Pizza Hut</title>
 
-    <script src="https://kit.fontawesome.com/d6e6d65e42.js" crossorigin="anonymous"></script>
+class Header extends HTMLElement{
+    constructor(){
+        super();
 
-    <link rel="stylesheet" href="css/header_footer.css">
-    <link rel="stylesheet" href="css/product.css">
-
-</head>
-
-
-<body>
-
-    <header>
+        this.innerHTML =  `<header>
         <a href="index.html">
           <picture class="logo">
               <!-- <source srcset="" media="(min-width:900px)" width="10px" heigth="80px"> -->
@@ -51,240 +27,31 @@
   
           </nav>
          
-    </header>
+      </header> 
+       `
+    }
 
-    <main>
-        <section class="product_page">
+    connectedCallback(){
 
-            <section class="products">
-                <section class="menu">
-                    <ul>
-                        <li><a href="#">БАГЦ</a></li>
-                        <li><a href="#">ПИЦЦА</a></li>
-                        <li><a href="product_nemelt.html">НЭМЭЛТ</a></li>
-                        <li><a href="#">УНДАА</a></li>
-                    </ul>
-                </section>
-            
-        
-                <section id="food">
-                <!-- <article>
-                    <a href="#">
-                        <picture>
-                            <img src="./product_image/drink1.jpg" alt="Маханд дурлагдсад">
-                        </picture>
-                    </a>
-                    <h3>Coca Cola 1.25L</h3>
-                    <p>6,000₮</p>
-                    <button type="submit">Сагсанд нэмэх</button>
-                </article>
-        
-                <article>
-                    <a href="#">
-                        <picture>
-                            <img src="./product_image/drinks9.jpg" alt="Бяслагт">
-                        </picture>
-                    </a>
-                    <h3>Fuze Tea 1.25L</h3>
-                    <p>6,000₮</p>
-                    <button type="submit">Сагсанд нэмэх</button>
-                </article>
-        
-                <article>
-                    <a href="#">
-                    <picture>
-                        <img src="./product_image/drink2.jpg" alt="Пепперони">
-                    </picture>
-                    </a>
-                    <h3>Sprite 1.25L</h3>
-                    <p>6,000₮</p>
-                    <button type="submit">Сагсанд нэмэх</button>
-                </article>
-        
-                <article>
-                    <a href="#">
-                    <picture>
-                       <img src="./product_image/drink3.jpg" alt="BBQ тахиа">
-                    </picture>
-                    </a>
-                    <h3>Fanta 1.25L</h3>
-                    <p>6,000₮</p>
-                    <button type="submit">Сагсанд нэмэх</button>
-                </article>
-        
-                <article>
-                    <a href="#">
-                        <picture>
-                           <img src="./product_image/drinks8.jpg" alt="BBQ тахиа">
-                        </picture>
-                        </a>
-                    <h3>Cola Zero 0.5L</h3>
-                    <p>3,000₮</p>
-                    <button type="submit">Сагсанд нэмэх</button>
-                </article>
-        
-                <article>
-                    <a href="#">
-                        <picture>
-                           <img src="./product_image/drinks4.jpg" alt="BBQ тахиа">
-                        </picture>
-                        </a>
-                    <h3>Cola Zero 1.25L</h3>
-                    <p>6,000₮</p>
-                    <button type="submit">Сагсанд нэмэх</button>
-                </article>
-        
-              
-                <article>
-                    <a href="#">
-                        <picture>
-                           <img src="./product_image/drinks5.jpg" alt="BBQ тахиа">
-                        </picture>
-                        </a>
-                    <h3>Coca Cola 0.5L</h3>
-                    <p>3,000₮</p>
-                    <button type="submit">Сагсанд нэмэх</button>
-                </article>
-        
-                <article>
-                    <a href="#">
-                        <picture>
-                           <img src="./product_image/drinks6.jpg" alt="BBQ тахиа">
-                        </picture>
-                        </a>
-                    <h3>Sprite 0.5L</h3>
-                    <p>3,000₮</p>
-                    <button type="submit">Сагсанд нэмэх</button>
-                </article>
-                
-                <article>
-                    <a href="#">
-                        <picture>
-                           <img src="./product_image/drinks7.jpg" alt="BBQ тахиа">
-                        </picture>
-                        </a>
-                    <h3>Fanta 0.5L</h3>
-                    <p>3,000₮</p>
-                    <button type="submit">Сагсанд нэмэх</button>
-                </article> 
-                </section> -->
-                </section>
-            </section>
+    }
+    
+    disconnectCallback(){
 
-            <aside class="cart">
-                <section class="caption">
-                    <div></div>
-                    <h2>Таны сагс</h2>
-                    <div></div> 
-                </section>
-                
-               
-                    <section class="cart_empty">
-                        <picture>
-                            <img src="./aboutUs_image/cart.svg" alt="hooson">
-                        </picture>
-                        <p>Таны сагс хоосон байна</p>
-                    </section>
-        
-                    <section class="cart_full">
-                        <article>
-                            <h2>Маханд дурлагсад ба пепперони</h2>
+    }
 
-                            <div class="part1">
-                            <select name="төрөл" id="">
-                                <option>Том пан</option>
-                                <option>Том уламжлалт</option>
-                                <option>Дунд пан</option>
-                                <option>Дунд уламжлалт</option>
-                                <option>Жижиг пан</option>
-                                <option>Жижиг уламжлалт</option>
-                            </select>
-        
-                            <section class="close" style="font-size: 25px; margin-right: 1rem; color: gr;">&times;</section>
+    attributeChangedCallback(attrName, oldVal, newVal) {
 
-                            </div>
-        
-                            <div class="part2">
-                                <section class="add_food">
-                                  <button type="submit">+</button>
-                                    <p>1</p>
-                                  <button type="submit">-</button>
-                                </section>
-                                 <p>99'999₮</p>
-                            </div>
-                        </article>
-        
-                        <article>
-                            <h2>Маханд дурлагсад ба пепперони</h2>
+    }
+}
 
-                            <div class="part1">
-                            <select name="төрөл" id="">
-                                <option>Том пан</option>
-                                <option>Том уламжлалт</option>
-                                <option>Дунд пан</option>
-                                <option>Дунд уламжлалт</option>
-                                <option>Жижиг пан</option>
-                                <option>Жижиг уламжлалт</option>
-                            </select>
-        
-                            <section class="close" style="font-size: 25px; margin-right: 1rem; color: gr;">&times;</section>
+window.customElements.define('header-part', Header);
 
-                            </div>
-        
-                            <div class="part2">
-                                <section class="add_food">
-                                  <button type="submit">+</button>
-                                    <p>1</p>
-                                  <button type="submit">-</button>
-                                </section>
-                                 <p>99'999₮</p>
-                            </div>
-                        </article>
-        
-                        <article>
-                            <h2>Маханд дурлагсад ба пепперони</h2>
 
-                            <div class="part1">
-                            <select name="төрөл" id="">
-                                <option>Том пан</option>
-                                <option>Том уламжлалт</option>
-                                <option>Дунд пан</option>
-                                <option>Дунд уламжлалт</option>
-                                <option>Жижиг пан</option>
-                                <option>Жижиг уламжлалт</option>
-                            </select>
-        
-                            <section class="close" style="font-size: 25px; margin-right: 1rem; color: gr;">&times;</section>
+class Footer extends HTMLElement{
 
-                            </div>
-        
-                            <div class="part2">
-                                <section class="add_food">
-                                  <button type="submit">+</button>
-                                    <p>1</p>
-                                  <button type="submit">-</button>
-                                </section>
-                                 <p>99'999₮</p>
-                            </div>
-                        </article>
-
-                    </section>
-
-                    <section class="order_button">
-                        <section class="overral_price">
-                        <p>Нийт</p>
-                        <p>99'999₮</p>
-                    </section>
-                        <button type="submit">Захиалах</button>
-                    </section>  
-            </aside>
-
-        </section>
-        
-            <script src="./javascript/product_json.js" type="module"></script>
-    </main>
-
-    <footer>
+   constructor(){
+        super();
+        this.innerHTML = ` <footer>
 
         <section class="footer_top_section">
 
@@ -393,10 +160,8 @@
         </section>
 
     </footer>
+    `
+   }
+}
 
-    <script src="./javascript/menu_bar.js"></script>
-    <script src="./javascript/url.js"></script>
-
-</body>
-
-
+window.customElements.define('footer-part', Footer);

@@ -1,0 +1,100 @@
+{
+    "drink":[
+    {
+      "image" : "./product_image/drink1.jpg",
+      "title" : "Coca Cola 1.25L",
+      "price" : "6,000₮"
+    },
+    {
+        "image" : "./product_image/drinks9.jpg",
+        "title" : "Fuze Tea 1.25L",
+        "price" : "6,000₮"
+    }, 
+    {
+        "image" : "./product_image/drink2.jpg",
+        "title" : "Sprite 1.25L",
+        "price" : "6,000₮"
+    },
+    {
+        "image" : "./product_image/drink3.jpg",
+        "title" : "Fanta 1.25L",
+        "price" : "6,000₮"
+    },
+    {
+        "image" : "./product_image/drinks8.jpg",
+        "title" : "Cola Zero 0.5L",
+        "price" : "3,000₮"
+    },
+    {
+        "image" : "./product_image/drink4.jpg",
+        "title" : "Cola Zero 1.25L",
+        "price" : "6,000₮"
+    },
+    {
+        "image" : "./product_image/drink5.jpg",
+        "title" : "Coca Cola 0.5L",
+        "price" : "3,000₮"
+    },
+    {
+        "image" : "./product_image/drink6.jpg",
+        "title" : "Sprite 0.5L",
+        "price" : "3,000₮"
+    },
+    {
+        "image" : "./product_image/drinks7.jpg",
+        "title" : "Fanta 0.5L",
+        "price" : "3,000₮"
+    }
+],
+
+"sides":[
+    {
+      "image" : "./product_image/nemelt1.jpg",
+      "title" : "Бяслагтай ороомог",
+      "price" : "9,000₮"
+    },
+    {
+        "image" : "./product_image/nemelt2.jpg",
+        "title" : "Тахианы далавчны бугалга",
+        "price" : "15,000₮"
+      },
+      {
+        "image" : "./product_image/nemelt3.jpg",
+        "title" : "Шарсан төмс",
+        "price" : "6,000₮"
+      },
+      {
+        "image" : "./product_image/nemelt7.jpg",
+        "title" : "Мини донатс<",
+        "price" : "6,000₮"
+      },
+      {
+        "image" : "./product_image/nemelt5.jpg",
+        "title" : "Зайдастай ороомог",
+        "price" : "6,000₮"
+      },
+      {
+        "image" : "./product_image/nemelt6.jpg",
+        "title" : "Саран төмс",
+        "price" : "6,000₮"
+      },
+      {
+        "image" : "./product_image/nemelt4.jpg",
+        "title" : "Попкорн тахиа",
+        "price" : "8,000₮"
+      },
+      {
+        "image" : "./product_image/nemelt8.jpg",
+        "title" : "Тахианы далавчны бугалга",
+        "price" : "15,000₮"
+      },
+      {
+        "image" : "./product_image/nemelt9.jpg",
+        "title" : "Шорлог",
+        "price" : "13,000₮"
+      }
+]
+
+
+
+}     

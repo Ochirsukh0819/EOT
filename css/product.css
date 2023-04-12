@@ -20,14 +20,14 @@ body{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .products{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center;  
 
 }
 
@@ -58,27 +58,28 @@ body{
     color: var(--black_color);
 }
 
-.food{
+#food{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-evenly;
     gap: 1.5rem;
     margin-top: 3rem;
+    margin-left: 3rem
 }
 
-.food > article{
+#food > article{
     display: flex;
     flex-direction: column;
     background-color:var(--white_color);
     border-radius: 0.625rem;
 }
 
-.food > article > a > picture > img{
+#food > article > a > picture > img{
     width: 18.75rem;
     border-radius: 0.625rem;
 }
 
-.food > article > h3{
+#food > article > h3{
     width: 60%;
     line-height: 1.2;
     margin: 0.675rem auto auto 1rem;
@@ -88,15 +89,15 @@ body{
 
 }
 
-.food > article > p{
+#food > article > p{
     display: flex;
     justify-content: end;
-    margin:0.3rem 1rem 0 0 ;
+    margin:0.3rem 1rem 0 0;
     /* font-weight: bold; */
     font-family: var(--product_fonts);
 }
 
-.food > article >button{
+#food > article >button{
   margin: 1.5rem 4rem 1rem 4rem;
   background-color: #FFD3A6;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -105,7 +106,7 @@ body{
   box-shadow: inset;
 }
 
-.food > article >button:hover{
+#food > article >button:hover{
   
     background-color: var(--main_color);
     color: var(--white_color);
