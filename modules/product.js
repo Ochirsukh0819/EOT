@@ -38,14 +38,14 @@ export default class Module_Product{
                 
                 const products = document.getElementById('food');
 
-                if(window.location.pathname == '/product.html'){
+                // if(window.location.hostname == '/product.html'){
                 products.insertAdjacentHTML("afterbegin",
                      data.record.drink.map(newproduct => {
                          const new_obj = new Product(newproduct);
                          return new_obj.Render();
                      }).join('')
                      );
-                }
+              //  }
 
                 if(window.location.pathname == '/product_nemelt.html'){
                     products.insertAdjacentHTML("afterbegin",
