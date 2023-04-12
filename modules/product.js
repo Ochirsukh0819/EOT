@@ -47,14 +47,14 @@ export default class Module_Product{
                      );
               //  }
 
-                if(window.location.pathname == '/product_nemelt.html'){
-                    products.insertAdjacentHTML("afterbegin",
-                         data.record.sides.map(newproduct => {
-                             const new_obj = new Product(newproduct);
-                             return new_obj.Render();
-                         }).join('')
-                         );
-                    }
+                // if(window.location.pathname == '/product_nemelt.html'){
+                //     products.insertAdjacentHTML("afterbegin",
+                //          data.record.sides.map(newproduct => {
+                //              const new_obj = new Product(newproduct);
+                //              return new_obj.Render();
+                //          }).join('')
+                //          );
+                //     }
 
              })
         })
