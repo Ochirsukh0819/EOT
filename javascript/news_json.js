@@ -33,6 +33,7 @@ news.download();
 
 // .then(response => response.json())
 // .then(data => {
+//     console.log("aaaaaaaaaaa ", data);
 //     const news = data.map(newsData => new News(newsData));
 //     console.log("Map ", news);
 //     const newsList = news.map(i => i.Render()).join('');
