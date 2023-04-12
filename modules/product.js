@@ -40,7 +40,7 @@ export default class Module_Product{
 
                 if(window.location.pathname == '/product.html'){
                 products.insertAdjacentHTML("afterbegin",
-                     data.drink.map(newproduct => {
+                     data.record.drink.map(newproduct => {
                          const new_obj = new Product(newproduct);
                          return new_obj.Render();
                      }).join('')
@@ -49,7 +49,7 @@ export default class Module_Product{
 
                 if(window.location.pathname == '/product_nemelt.html'){
                     products.insertAdjacentHTML("afterbegin",
-                         data.sides.map(newproduct => {
+                         data.record.sides.map(newproduct => {
                              const new_obj = new Product(newproduct);
                              return new_obj.Render();
                          }).join('')
