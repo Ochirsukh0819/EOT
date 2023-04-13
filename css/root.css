@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+:root{
+
+  --main_color: #D0353C;
+  --main_width: 100%;
+  --main_height: 100%;
+  --main_bg_color: #D9D9D9;
+
+    /*header part */ 
+    --header_background: #FFFFFF;     
+    --header_footer_font_family: 'PT Sans', sans-serif;
+    --header_font_color: #000000;
+
+    /*slider part*/
+    --slide_height: 70vh;
+
+    /*Product*/
+    --title_font_size: 1.25rem;
+    --title_margin_top: 1rem;
+    --title_padding_left: 1.25rem;
+    --product_margin_top: 2.5rem;
+    --products_background: rgba(238, 238, 238, 0.6);
+
+    /* News */ 
+    --news_margin_top: 3rem;
+    --news_background: 	rgba(238, 238, 238, 0.6);
+
+    /* footer */
+    --footer_background: #202020;
+    --footer_font_color: #fff;
+    --footer_font_size: 1rem;
+    --footer_title_size: 0.875rem;
+    --footer_p_color: #AEAEAE;
+    --border_radius: 0.5rem;
+    --font_margin_top: 2rem;
+    --footer_padding: 1rem 0 1rem 0;
+    
+
+    /* AboutUs part */
+    
+    --font_family: 'Inter', sans-serif;
+    --information_width:  calc(60% - 2rem);
+    --information_margin_left: 2rem;
+    --information_margin_bottom: 1rem;
+    --black_color: black;
+    --white_color: white;
+
+    /* products */ 
+    --product_fonts : 'Mulish' , sans-serif;
+    --product_color: #4A4444;
+    --product_font_size: 1rem;
+}

@@ -1,0 +1,142 @@
+@import url('root.css');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    width: 100%;
+}
+
+/* Slider part */ 
+.Slider{
+    width: var(--main_width);
+    height: var(--slide_height);
+    overflow: hidden;
+}
+
+.slide{
+    width: var(--main_width);
+    height: var(--slide_height);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.Slider >  picture > img{
+    width: 100%;
+    aspect-ratio: initial;
+}
+
+/*Product*/
+.product .product_title{
+    margin-top: var(--title_margin_top);
+    padding-left: var(--title_padding_left);
+}
+
+.product .product_title>h1{
+    font-family: var(--header_footer_font_family);
+    font-size: var(--title_font_size);
+}
+
+.red_line{
+    width: 5.625rem;
+    height: 0.01rem;;
+    margin: var(--title_margin_top) 0px;
+    background-color: var(--main_color);
+}
+
+.product_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: var(--product_margin_top);
+}
+
+.products{
+    position: relative;
+}
+.products > picture{
+    opacity: 0.85;
+}
+.overlay_text{
+    width: var(--main_width);
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--products_background);
+    font-size: 1.25rem;  
+    font-family: var(--header_footer_font_family);
+    color: black;
+    padding: 0.5rem;
+    text-align: center;
+
+}
+
+.products:hover .overlay_text{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Information part*/
+
+.News .news_title{
+    margin-top: var(--news_margin_top);
+    padding-left: var(--title_padding_left);
+}
+
+.News .news_title>h1{
+    font-family: var(--header_footer_font_family);
+    font-size: var(--title_font_size);
+}
+
+
+
+.information_part{
+    width: var(--main_width);
+    display: grid; 
+    justify-content: center;
+    align-items: center ;
+    gap: 1rem;
+    margin-top: 3.75rem;
+}
+
+.news1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.news2{
+    display: grid;
+    grid-template-columns: repeat(3,17.5rem);
+    grid-gap: 1rem;
+}
+
+.news2_part{
+    position: relative;
+}
+
+ .news2_title{
+    width: var(--main_width);
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    background-color: var(--news_background);
+    font-size: 1.25rem;  
+    font-family: var(--header_footer_font_family);
+    color: black;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.news2_part:hover .news2_title{
+    opacity: 1;
+}
+
+.news1_part > .news1_title{
+    opacity: 0;
+}
