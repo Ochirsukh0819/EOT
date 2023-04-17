@@ -51,6 +51,15 @@
     --product_fonts : 'Mulish' , sans-serif;
     --product_color: #4A4444;
     --product_font_size: 1rem;
+<<<<<<< HEAD
+
+     /*Order*/
+     --process_background : #EE3A43;
+     --column_background: #FFFFFF;
+     --white_background :  #FFFFFF;
+     --black_background:#000000;
+}
+=======
     
     /*Order*/
     --process_background : #EE3A43;
@@ -60,3 +69,4 @@
     --border_radius: 0.938rem;
     --align_items: center;
 }
+>>>>>>> 041663561dcd470e48f6b23eda947ebd5e271a89
