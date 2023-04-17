@@ -51,4 +51,10 @@
     --product_fonts : 'Mulish' , sans-serif;
     --product_color: #4A4444;
     --product_font_size: 1rem;
+
+     /*Order*/
+     --process_background : #EE3A43;
+     --column_background: #FFFFFF;
+     --white_background :  #FFFFFF;
+     --black_background:#000000;
 }

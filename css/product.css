@@ -217,3 +217,55 @@ body{
     background-color: var(--main_color);
     border-style: none;
   }
+
+  
+@media only screen and (max-width: 85.125rem) {
+  .cart {
+    display: none;
+  }
+
+  .product_page {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #food {
+    margin-left: 0rem;
+  }
+}
+
+@media only screen and (max-width: 62.5rem) {
+  #food {
+    grid-template-columns: repeat(2, 1.5fr);
+  }
+}
+
+@media only screen and (max-width: 40.625rem) {
+  #food {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu>ul {
+    gap: 1.5rem;
+  }
+
+  .menu>ul>li {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 21.375rem) {
+  #food>article {
+    width: 70%;
+    height: 105%;
+    margin-top: 5%;
+    margin-left: 15%;
+    flex-shrink: 1;
+    gap: 0px;
+  }
+
+  #food>article>a>picture>img {
+    width: 100%;
+  }
+}
