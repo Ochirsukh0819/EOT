@@ -93,8 +93,102 @@
         "title" : "Шорлог",
         "price" : "13,000₮"
       }
+],
+
+"pizzas":[
+  {
+    "image" : "./product_image/pizza1.jpg",
+    "title" : "Sausage stuffed crust",
+    "price" : "37,000₮"
+  },
+  {
+      "image" : "./product_image/pizza2.jpg",
+      "title" : "Meat Lovers",
+      "price" : "34,000₮"
+    },
+    {
+      "image" : "./product_image/pizza3.jpg",
+      "title" : "Veggie Lovers",
+      "price" : "32,000₮"
+    },
+    {
+      "image" : "./product_image/pizza4.jpg",
+      "title" : "ML & Pepperioni",
+      "price" : "34,000₮"
+    },
+    {
+      "image" : "./product_image/pizza5.jpg",
+      "title" : "ML & Pepperioni",
+      "price" : "34,000₮"
+    },
+    {
+      "image" : "./product_image/pizza6.jpg",
+      "title" : "Саран төмс",
+      "price" : "6,000₮"
+    },
+    {
+      "image" : "./product_image/pizza7.jpg",
+      "title" : "Попкорн тахиа",
+      "price" : "8,000₮"
+    },
+    {
+      "image" : "./product_image/pizza8.jpg",
+      "title" : "Тахианы далавчны бугалга",
+      "price" : "15,000₮"
+    },
+    {
+      "image" : "./product_image/pizza9.jpg",
+      "title" : "Шорлог",
+      "price" : "13,000₮"
+    }
+],
+
+"deals":[
+  {
+    "image" : "./product_image/pizza1.jpg",
+    "title" : "Sausage stuffed crust",
+    "price" : "37,000₮"
+  },
+  {
+      "image" : "./product_image/pizza2.jpg",
+      "title" : "Meat Lovers",
+      "price" : "34,000₮"
+    },
+    {
+      "image" : "./product_image/pizza3.jpg",
+      "title" : "Veggie Lovers",
+      "price" : "32,000₮"
+    },
+    {
+      "image" : "./product_image/pizza4.jpg",
+      "title" : "ML & Pepperioni",
+      "price" : "34,000₮"
+    },
+    {
+      "image" : "./product_image/pizza5.jpg",
+      "title" : "ML & Pepperioni",
+      "price" : "34,000₮"
+    },
+    {
+      "image" : "./product_image/pizza6.jpg",
+      "title" : "Саран төмс",
+      "price" : "6,000₮"
+    },
+    {
+      "image" : "./product_image/pizza7.jpg",
+      "title" : "Попкорн тахиа",
+      "price" : "8,000₮"
+    },
+    {
+      "image" : "./product_image/pizza8.jpg",
+      "title" : "Тахианы далавчны бугалга",
+      "price" : "15,000₮"
+    },
+    {
+      "image" : "./product_image/pizza9.jpg",
+      "title" : "Шорлог",
+      "price" : "13,000₮"
+    }
 ]
-
-
 
 }     

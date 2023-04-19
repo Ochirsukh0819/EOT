@@ -34,18 +34,78 @@ export default class Module_Product{
             respone.json()
         .then(data =>{
                 console.log("DATA", data);
-                console.log(window.location);
-                
                 const products = document.getElementById('food');
 
-                // if(window.location.hostname == '/product.html'){
+                const sides = document.getElementsByClassName('product3')[0];
+                const  drink = document.getElementsByClassName('product4')[0];
+                const pizza = document.getElementsByClassName('product2')[0];
+                const deals = document.getElementsByClassName('product1')[0];
+
+
+                sides.addEventListener("click",() => {
+                    if (products.hasChildNodes()) {
+                        while (products.firstChild) {
+                            products.removeChild(products.firstChild);
+                        }
+                      }
+                        products.insertAdjacentHTML("afterbegin",
+                         data.record.sides.map(newproduct => {
+                             const new_obj = new Product(newproduct);
+                             return new_obj.Render();
+                         }).join('')
+                         );
+                });
+
+                drink.addEventListener("click",() => {
+                    if (products.hasChildNodes()) {
+                        while (products.firstChild) {
+                            products.removeChild(products.firstChild);
+                        }
+                      }
+                    products.insertAdjacentHTML("afterbegin",
+                     data.record.drink.map(newproduct => {
+                         const new_obj = new Product(newproduct);
+                         return new_obj.Render();
+                     }).join('')
+                     );
+            });
+
+            pizza.addEventListener("click",() => {
+                if (products.hasChildNodes()) {
+                    while (products.firstChild) {
+                        products.removeChild(products.firstChild);
+                    }
+                  }
+                    products.insertAdjacentHTML("afterbegin",
+                     data.record.pizzas.map(newproduct => {
+                         const new_obj = new Product(newproduct);
+                         return new_obj.Render();
+                     }).join('')
+                     );
+            });
+
+            deals.addEventListener("click",() => {
+                if (products.hasChildNodes()) {
+                    while (products.firstChild) {
+                        products.removeChild(products.firstChild);
+                    }
+                  }
+                    products.insertAdjacentHTML("afterbegin",
+                     data.record.deals.map(newproduct => {
+                         const new_obj = new Product(newproduct);
+                         return new_obj.Render();
+                     }).join('')
+                     );
+            });
+    
+                
                 products.insertAdjacentHTML("afterbegin",
                      data.record.drink.map(newproduct => {
                          const new_obj = new Product(newproduct);
                          return new_obj.Render();
                      }).join('')
                      );
-              //  }
+               
 
                 // if(window.location.pathname == '/product_nemelt.html'){
                 //     products.insertAdjacentHTML("afterbegin",
@@ -53,7 +113,7 @@ export default class Module_Product{
                 //              const new_obj = new Product(newproduct);
                 //              return new_obj.Render();
                 //          }).join('')
-                //          );
+                //          );`
                 //     }
 
              })
