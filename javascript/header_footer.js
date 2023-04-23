@@ -64,7 +64,7 @@ class Footer extends HTMLElement{
         </section>
 
         <article class="about_us">
-            <h3>БИДНИЙ ТУХАЙ</h3>
+            <p>БИДНИЙ ТУХАЙ</p>
             <ul>
                 <li>
                     <a href="#">Бидний тухай</a>
@@ -79,7 +79,7 @@ class Footer extends HTMLElement{
         </article>
 
             <article class="about_us">
-                <h3>ТУСЛАМЖ ҮЙЛЧИЛГЭЭ</h3>
+                <p>ТУСЛАМЖ ҮЙЛЧИЛГЭЭ</p>
                 <ul>
                     <li>
                         <a href="#">Илчлэгийн мэдээлэл</a>
@@ -94,7 +94,7 @@ class Footer extends HTMLElement{
             </article>
 
             <address class="join_us">
-                <h3>БИДЭНТЭЙ НЭГДЭХ</h3>
+                <p>БИДЭНТЭЙ НЭГДЭХ</p>
                 <ul>
                     <li>
                         <a href="#">
