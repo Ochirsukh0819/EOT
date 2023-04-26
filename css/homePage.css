@@ -169,21 +169,11 @@ body{
     .news1{
         display: flex;
         flex-direction: column;
-<<<<<<< HEAD
-        width: 90%;
-        margin: auto;
-=======
->>>>>>> origin/Temvvlen
     }
     
     .news2{
         display: flex;
         flex-direction: column;
-<<<<<<< HEAD
-        margin-left: 20%;
-        width: 70%;
-    }
-=======
         width: 70%;
     }
     .news1 > section > picture > img {
@@ -207,7 +197,6 @@ body{
         width: 90%;
         margin-left: 5%;
     }
->>>>>>> origin/Temvvlen
 }
 
 @media only screen and (max-width: 33rem) {
@@ -237,14 +226,8 @@ body{
     .Slider{
         height: 100px;
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/Temvvlen
 } 
-
-
-
 
 
 

@@ -160,11 +160,7 @@ body{
     color: var(--black_color);
 }
 .pre_next >a:hover{
-<<<<<<< HEAD
-    background-color: var(--);
-=======
     background-color: var(--red);
->>>>>>> origin/Temvvlen
     color: var(--white_color);
 }
 
