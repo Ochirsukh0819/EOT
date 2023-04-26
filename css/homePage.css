@@ -1,13 +1,14 @@
 @import url('root.css');
 
 *{
-    box-sizing: border-box;
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
     width: 100%;
+    
 }
 
 /* Slider part */ 
@@ -42,7 +43,7 @@ body{
 
 .red_line{
     width: 5.625rem;
-    height: 0.01rem;;
+    height: 0.01rem;
     margin: var(--title_margin_top) 0px;
     background-color: var(--main_color);
 }
@@ -63,15 +64,14 @@ body{
 .overlay_text{
     width: var(--main_width);
     height: auto;
+    background-color: var(--products_background);
+    padding: 0.5rem;
     position: absolute;
     bottom: 0;
-    background-color: var(--products_background);
     font-size: 1.25rem;  
     font-family: var(--header_footer_font_family);
     color: black;
-    padding: 0.5rem;
     text-align: center;
-
 }
 
 .products:hover .overlay_text{
@@ -97,11 +97,11 @@ body{
 
 .information_part{
     width: var(--main_width);
+    margin-top: 3.75rem;
     display: grid; 
     justify-content: center;
     align-items: center ;
     gap: 1rem;
-    margin-top: 3.75rem;
 }
 
 .news1{
@@ -122,14 +122,14 @@ body{
  .news2_title{
     width: var(--main_width);
     height: auto;
+    background-color: var(--news_background);
+    padding: 0.5rem;
     position: absolute;
     bottom: 0;
     opacity: 0;
-    background-color: var(--news_background);
     font-size: 1.25rem;  
     font-family: var(--header_footer_font_family);
     color: black;
-    padding: 0.5rem;
     text-align: center;
 }
 
@@ -169,15 +169,33 @@ body{
     .news1{
         display: flex;
         flex-direction: column;
-        width: 90%;
-        margin: auto;
     }
     
     .news2{
         display: flex;
         flex-direction: column;
-        margin-left: 20%;
         width: 70%;
+    }
+    .news1 > section > picture > img {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .news2_part{
+        margin-left: 40%;
+    }
+
+    .news2_part > picture > img{
+        width: 90%;
+    }
+
+    #odd_pic > picture > img{
+        margin-left: 20%;
+    }
+
+    .products > picture > img, .products{
+        width: 90%;
+        margin-left: 5%;
     }
 }
 
@@ -208,6 +226,7 @@ body{
     .Slider{
         height: 100px;
     }
+
 } 
 
 
