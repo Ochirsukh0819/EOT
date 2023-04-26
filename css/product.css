@@ -308,7 +308,7 @@ body{
   }
 
   
-/* @media only screen and (max-width: 85.125rem) {
+@media only screen and (max-width: 85.125rem) {
   .cart {
     display: none;
   }
@@ -319,7 +319,7 @@ body{
   #food {
     margin-left: 0rem;
   }
-} */
+}
 
 @media only screen and (max-width: 62.5rem) {
   #food {
