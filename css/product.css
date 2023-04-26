@@ -1,0 +1,456 @@
+@import url('root.css');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+  width: 100%;
+  background-color: #f4e9e0;
+	opacity: 1;
+	background-image:  radial-gradient(#f6a24a 2px, transparent 2px), radial-gradient(#f6a24a 2px, #f4e9e0 2px);
+	background-size: 80px 80px;
+	background-position: 0 0,40px 40px;
+	background-attachment: fixed;
+}
+
+.product_page{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+
+.products > .menu{
+    margin-top: 2rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    background-color: var(--white_color);
+    border-radius: 1.5rem;
+}
+
+.menu > ul{ 
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 3rem;
+}
+
+.menu > ul > li{
+    text-decoration: none;
+    font-family: var(--header_footer_font_family);
+}
+
+.menu > ul > li > a{
+    text-decoration: none;
+    color: var(--black_color);
+}
+
+#food{
+    margin-top: 3rem;
+    margin-left: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    gap: 1.5rem;
+}
+
+#food > article{
+    background-color:var(--white_color);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.625rem;
+}
+
+#food > article > a > picture > img{
+    width: 18.75rem;
+    border-radius: 0.625rem;
+}
+
+#food > article > h3{
+    width: 60%;
+    line-height: 1.2;
+    margin: 0.675rem auto auto 1rem;
+    font-family: var(--product_fonts);
+    font-size: var(--product_font_size);
+    color: var(--product_color);
+
+}
+
+#food > article > p{
+    margin:0.3rem 1rem 0 0;
+    display: flex;
+    justify-content: end;
+    /* font-weight: bold; */
+    font-family: var(--product_fonts);
+}
+
+#food > article >button{
+    margin: 1.5rem 4rem 1rem 4rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    background-color: #FFD3A6;
+    border-radius: 10px;
+    border-style: none;
+  
+}
+
+#food > article >button:hover{
+    background-color: var(--main_color);
+    color: var(--white_color);
+  }
+
+  .cart{
+    width: 25%;
+    background-color: var(--white_color);
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cart > .caption{
+    display: flex;
+    justify-content: center;
+  }
+  .cart > .cart_empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart > .cart_full{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cart > .cart_full > article{
+    background-color: var(--white_color);
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 5px #F4F4F4;
+  }
+
+  .cart > .cart_full > article h2{
+    width: 50%;
+    margin: 1rem 1rem 1rem 1.5rem; 
+    font-size: 1.2rem;
+    font-style: var(--header_footer_font_family);
+  }
+
+  .cart > .cart_full >article > .part1{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cart > .cart_full >article > .part1> select{
+    margin-left: 1rem;
+    padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px #F4F4F4;
+  }
+
+  .cart > .cart_full >article > .part2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .cart > .cart_full >article > .part2 > .add_food{
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap:  0.625rem;
+  }
+
+  .cart > .cart_full >article > .part2 > .add_food > button{
+    padding: 3px;
+  }
+
+  .cart > .cart_full >article > .part2 > p{
+    
+    margin: 1rem;
+    font-weight: bold;
+  }
+
+  .cart > .order_button{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 0.5rem;
+  }
+
+  .cart .order_button > .overral_price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:4rem;
+  }
+
+  .cart .order_button > button{
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: var(--main_color);
+    color:var(--white_color);
+    border-radius: 1.2rem;
+    border-style: none;
+  }
+
+  
+@media only screen and (max-width: 85.125rem) {
+  .cart {
+    display: none;
+  }
+
+  .product_page {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #food {
+    margin-left: 0rem;
+  }
+}
+
+@media only screen and (max-width: 62.5rem) {
+  #food {
+    grid-template-columns: repeat(2, 1.5fr);
+  }
+}
+
+@media only screen and (max-width: 40.625rem) {
+  #food {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu>ul {
+    gap: 1.5rem;
+  }
+
+  .menu>ul>li {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 21.375rem) {
+  #food>article {
+    width: 70%;
+    height: 105%;
+    margin-top: 5%;
+    margin-left: 15%;
+    flex-shrink: 1;
+    gap: 0px;
+  }
+
+  #food>article>a>picture>img {
+    width: 100%;
+  }
+}
+
+
+
+
+.cart {
+  width: 25%;
+  background-color: var(--white_color);
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 0.938rem;
+}
+
+.cart>.caption {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cart>.cart_empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cart>.cart_full {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart>.cart_full>article {
+  margin-bottom: 1rem;
+  background-color: var(--white_color);
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px 5px #F4F4F4;
+}
+
+.cart>.cart_full>article h2 {
+  width: 50%;
+  margin: 1rem 1rem 1rem 1.5rem;
+  font-size: 1.2rem;
+  font-style: var(--header_footer_font_family);
+}
+
+.cart>.cart_full>article>.part1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart>.cart_full>article>.part1>select {
+  margin-left: 1rem;
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px #F4F4F4;
+  font-size: 1rem;
+}
+
+.cart>.cart_full>article>.part2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cart>.cart_full>article>.part2>.add_food {
+  margin: 1rem;
+  margin-left: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+}
+
+.cart>.cart_full>article>.part2>.add_food>button {
+  padding: 3px;
+}
+
+.cart>.cart_full>article>.part2>p {
+  margin: 1rem;
+  margin-right: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.cart>.order_button {
+  margin-bottom: 1rem;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 0.5rem;
+}
+
+.cart .order_button>.overral_price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 4rem;
+  font-size: 1.3rem;
+}
+
+
+.cart .order_button>button {
+  background-color: var(--main_color);
+  margin: 0.5rem 0 0.5rem 0;
+  padding: 1.3rem 2rem 1.3rem 2rem;
+  border-radius: 1.2rem;
+  border-style: none;
+  font-size: 1rem;
+  color: var(--white_color);
+}
+
+.add_food {
+  width: 20%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.add_food>button {
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: #FFFFFF;
+  border-radius: 0.5rem;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.add_food>p {
+  width: 1.75rem;
+  height: 1.75rem;
+  grid-column: 2;
+  text-align: center;
+}
+
+@media only screen and (max-width: 85.125rem) {
+  .cart {
+    display: none;
+  }
+
+  .product_page {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #food {
+    margin-left: 0rem;
+  }
+}
+
+@media only screen and (max-width: 62.5rem) {
+  #food {
+    grid-template-columns: repeat(2, 1.5fr);
+  }
+}
+
+@media only screen and (max-width: 40.625rem) {
+  #food {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menu>ul {
+    gap: 1.5rem;
+  }
+
+  .menu>ul>li {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 21.375rem) {
+  #food>article {
+    width: 70%;
+    height: 105%;
+    margin-top: 5%;
+    margin-left: 15%;
+    flex-shrink: 1;
+    gap: 0px;
+  }
+
+  #food>article>a>picture>img {
+    width: 100%;
+  }
+}

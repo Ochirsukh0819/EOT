@@ -1,0 +1,237 @@
+@import url('root.css');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    
+}
+
+/* Slider part */ 
+.Slider{
+    width: var(--main_width);
+    height: var(--slide_height);
+    overflow: hidden;
+}
+
+.slide{
+    width: var(--main_width);
+    height: var(--slide_height);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.Slider >  picture > img{
+    width: 100%;
+    aspect-ratio: initial;
+}
+
+/*Product*/
+.product .product_title{
+    margin-top: var(--title_margin_top);
+    padding-left: var(--title_padding_left);
+}
+
+.product .product_title>h1{
+    font-family: var(--header_footer_font_family);
+    font-size: var(--title_font_size);
+}
+
+.red_line{
+    width: 5.625rem;
+    height: 0.01rem;
+    margin: var(--title_margin_top) 0px;
+    background-color: var(--main_color);
+}
+
+.product_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: var(--product_margin_top);
+}
+
+.products{
+    position: relative;
+}
+.products > picture{
+    opacity: 0.85;
+}
+.overlay_text{
+    width: var(--main_width);
+    height: auto;
+    background-color: var(--products_background);
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.25rem;  
+    font-family: var(--header_footer_font_family);
+    color: black;
+    text-align: center;
+}
+
+.products:hover .overlay_text{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Information part*/
+
+.News .news_title{
+    margin-top: var(--news_margin_top);
+    padding-left: var(--title_padding_left);
+}
+
+.News .news_title>h1{
+    font-family: var(--header_footer_font_family);
+    font-size: var(--title_font_size);
+}
+
+
+
+.information_part{
+    width: var(--main_width);
+    margin-top: 3.75rem;
+    display: grid; 
+    justify-content: center;
+    align-items: center ;
+    gap: 1rem;
+}
+
+.news1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.news2{
+    display: grid;
+    grid-template-columns: repeat(3,17.5rem);
+    grid-gap: 1rem;
+}
+
+.news2_part{
+    position: relative;
+}
+
+ .news2_title{
+    width: var(--main_width);
+    height: auto;
+    background-color: var(--news_background);
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    font-size: 1.25rem;  
+    font-family: var(--header_footer_font_family);
+    color: black;
+    text-align: center;
+}
+
+.news2_part:hover .news2_title{
+    opacity: 1;
+}
+
+.news1_part > .news1_title{
+    opacity: 0;
+}
+
+@media only screen and (max-width: 87.5rem){
+    .product_content{
+        flex-wrap: wrap;
+        width: 100%; 
+    }
+}
+
+@media only screen and (max-width: 68.25rem){
+    
+    .news1{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    
+    .news2{
+        display: grid;
+        grid-template-columns: repeat(2,17.5rem);
+        grid-gap: 1rem;
+        justify-items: center;
+    }
+    
+}   
+
+@media only screen and (max-width: 37.5rem){
+    .news1{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .news2{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .news1 > section > picture > img {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .news2_part{
+        margin-left: 40%;
+    }
+
+    .news2_part > picture > img{
+        width: 90%;
+    }
+
+    #odd_pic > picture > img{
+        margin-left: 20%;
+    }
+
+    .products > picture > img, .products{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 33rem) {
+    .product{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media only screen and (max-width: 21rem) {
+    .product .product_title{
+        padding-left: 0rem;
+    }
+    
+    .product .product_title>h1{
+        font-size: 1.1rem;
+    }
+}
+
+ @media only screen and (max-width: 72.5rem) {
+    .Slider{
+        height: 300px;
+    }
+} 
+
+@media only screen and (max-width: 33.75rem) {
+    .Slider{
+        height: 100px;
+    }
+
+} 
+
+
+
+
+
+
+
