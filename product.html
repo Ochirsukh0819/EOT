@@ -18,6 +18,10 @@
     <title>Pizza Hut</title>
 
     <script src="https://kit.fontawesome.com/d6e6d65e42.js" crossorigin="anonymous"></script>
+    <script src="./web-component/one-product.js"></script>
+    <script src="./web-component/order_component.js" type="module"></script>
+
+   
 
     <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/product.css">
@@ -44,6 +48,7 @@
               </ul>
   
               <section class="header_cart">
+                <div id="circle"> <p id="add">0</p> </div>
                   <i class="fa-solid fa-cart-shopping" id="cart" style="font-size:20px;"></i>
                   <button type="submit">Захиалга</button>
               </section>
@@ -172,9 +177,9 @@
 
             <aside class="cart">
                 <section class="caption">
-                    <div></div>
+                    <!-- <div></div> -->
                     <h2>Таны сагс</h2>
-                    <div></div> 
+                    <!-- <div></div>  -->
                 </section>
                 
                
@@ -183,10 +188,37 @@
                             <img src="./aboutUs_image/cart.svg" alt="hooson">
                         </picture>
                         <p>Таны сагс хоосон байна</p>
-                    </section>
+                    </section> 
         
                     <section class="cart_full">
-                        <article>
+                     
+                       <!-- <article>
+                            <h2>Маханд дурлагсад ба пепперони</h2>
+
+                            <div class="part1">
+                            <select name="төрөл" id="">
+                                <option>Том пан</option>
+                                <option>Том уламжлалт</option>
+                                <option>Дунд пан</option>
+                                <option>Дунд уламжлалт</option>
+                                <option>Жижиг пан</option>
+                                <option>Жижиг уламжлалт</option>
+                            </select>
+        
+                            <section class="close" style="font-size: 25px; margin-right: 1rem; color: gr;">&times;</section>
+
+                            </div>
+        
+                            <div class="part2">
+                                <section class="add_food">
+                                  <button type="submit">+</button>
+                                    <p>1</p>
+                                  <button type="submit">-</button>
+                                </section>
+                                 <p>99'999₮</p>
+                            </div>
+                        </article>  -->
+                        <!-- <article>
                             <h2>Маханд дурлагсад ба пепперони</h2>
 
                             <div class="part1">
@@ -238,46 +270,52 @@
                                 </section>
                                  <p>99'999₮</p>
                             </div>
-                        </article>
-        
-                        <article>
-                            <h2>Маханд дурлагсад ба пепперони</h2>
-
-                            <div class="part1">
-                            <select name="төрөл" id="">
-                                <option>Том пан</option>
-                                <option>Том уламжлалт</option>
-                                <option>Дунд пан</option>
-                                <option>Дунд уламжлалт</option>
-                                <option>Жижиг пан</option>
-                                <option>Жижиг уламжлалт</option>
-                            </select>
-        
-                            <section class="close" style="font-size: 25px; margin-right: 1rem; color: gr;">&times;</section>
-
-                            </div>
-        
-                            <div class="part2">
-                                <section class="add_food">
-                                  <button type="submit">+</button>
-                                    <p>1</p>
-                                  <button type="submit">-</button>
-                                </section>
-                                 <p>99'999₮</p>
-                            </div>
-                        </article>
+                        </article>  -->
 
                     </section>
 
                     <section class="order_button">
                         <section class="overral_price">
                         <p>Нийт</p>
-                        <p>99'999₮</p>
+                        <p id="total_price">99'999₮</p>
                     </section>
                         <button type="submit">Захиалах</button>
                     </section>  
             </aside>
 
+        </section>
+
+        <section class="popUp">
+            <section class="modal ">
+            <section class="title">
+                <h1>Маханд дурлагсад ба пепперони</h1>
+            </section>
+            <i class="fas fa-times"></i>
+            <section class="img_part">
+                <picture>
+                    <img src="./product_image/mexic.png " alt="Зураг1">
+                </picture>
+                <section class="text_part">
+                    <section class="par_part">
+                        <h1> Хоёр төрлийн пицца нэг дор </h1>
+                        <p>
+                            <span> Маханд дурлагсад: </span>
+                            Бөөрөнхий мах, гахайн мах, 
+                            пепперони, тахианы мах, 
+                            Моццарелла бяслаг
+                        </p>
+                        <p>
+                           <span>Пепперони: </span> 
+                            Пепперони 2 дахин орсон, 
+                            Улаан лоолийн соус, 
+                            Моццарелла бяслаг
+                        </p>
+                        <p class="price">Үнэ: 99999</p>
+                    </section>
+                    <button> Сагсанд нэмэх </button>
+                </section>
+            </section>
+        </section>
         </section>
         
             <script src="./javascript/product_json.js" type="module"></script>
@@ -395,7 +433,7 @@
 
     <script src="./javascript/menu_bar.js"></script>
     <script src="./javascript/url.js"></script>
-
+    
 </body>
 
 

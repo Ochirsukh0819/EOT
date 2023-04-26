@@ -7,16 +7,17 @@ class Product {
   }
 
   Render() {
-    return `  <article>
-        <a href="#">
-            <picture>
-                <img src="${this.image}" alt="Маханд дурлагдсад">
-            </picture>
-        </a>
-        <h3>${this.title}</h3>
-        <p>${this.price}</p>
-        <button type="submit">Сагсанд нэмэх</button>
-    </article>`;
+    // return `  <article>
+    //     <a href="#">
+    //         <picture >
+    //             <img src="${this.image}"  alt="Маханд дурлагдсад">
+    //         </picture>
+    //     </a>
+    //     <h3>${this.title}</h3>
+    //     <p>${this.price}</p>
+    //     <button type="submit">Сагсанд нэмэх</button>
+    // </article>`;
+    return ` <product-component img=${this.image} title=${this.title} price=${this.price}></product-component> `;
   }
 }
 
@@ -83,7 +84,7 @@ export default class Module_Product {
                 .join("")
             );
           });
-
+          // pizza deer darah vyd event sonsoj bna
           pizza.addEventListener("click", () => {
             if (products.hasChildNodes()) {
               while (products.firstChild) {

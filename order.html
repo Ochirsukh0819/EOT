@@ -17,10 +17,11 @@
     мэдээ мэдээлэл бүхий веб сайт.">
     <meta property="og:url" content="https://ochirsukh0819.github.io/EOT/">
     <title>Pizza Hut</title>
-    <link rel="stylesheet" href="css/order_header_footer.css">
+
+    <script src="https://kit.fontawesome.com/d6e6d65e42.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/header_footer.css">
     <link rel="stylesheet" href="css/order.css">
 
-    <!-- <script src="./orders.js" defer></script> -->
 </head>
 
 <body>
@@ -41,6 +42,7 @@
               </ul>
   
               <section class="header_cart">
+                <div id="circle"> <p id="add">0</p> </div>
                   <i class="fa-solid fa-cart-shopping" id="cart" style="font-size:20px;"></i>
                   <button type="submit">Захиалга</button>
               </section>
@@ -49,25 +51,22 @@
           </nav>
          
     </header>
-
     <main>
         <section class="container">
             <section class="process">
                 <section class="steps">
                     <span class="circle active">1</span>
-                    <span class="circle">2</span>
-                    <span class="circle">3</span>
+                    <span class="circle" id="Hoyr_circle">2</span>
+                    <span class="circle" id="Gurav_cicrle">3</span>
                     <section class="progress-bar">
                         <span class="indicator"></span>
                     </section>
                     <img id="Ehnii_version" src="./order_image/delivery.png" alt="">
-                    <img id="Hoyrdugaar_version" src="./order_image/delivery.png" alt="">
-                    <img id="Guravdugaar_version" src="./order_image/delivery.png" alt="">
                 </section>
             </section>
+            
 
-
-            <section class="Sagsnii_heseg">
+            <section class="Sagsnii_heseg" id="Sagsnii_heseg">
                 <section class="Sagsnii_medeelel">
                     <h2>Таны сагс</h2>
                     <section class="Sagsnii_doorh_line"></section>
@@ -82,6 +81,8 @@
                                 <p>Таны сагс хоосон байна</p>
                             </section>
                         -->
+            <product-list></product-list>
+
                     <section class="Sags_zahialga">
                         <section class="Buteegdehuun">
                             <section class="Garchig">
@@ -132,14 +133,14 @@
                         <section class="Sagsnii_tovch">
                             <p>Нийт</p>
                             <p>99'999₮</p>
-                            <button type="submit">Үргэлжлүүлэх</button>
+                            <button id="Sagsnii_tovch" type="submit">Үргэлжлүүлэх</button>
                         </section>
                     </section>
 
                 </section>
             </section>
 
-            <section class="Hurgeltiin_heseg">
+            <section  id="Hurgeltiin_heseg">
                 <section class="Hurgeltiin_medeelel">
                     <h2>Хүргэлтийн мэдээлэл</h2>
                     <section class="Hurgeltiin_doorh_line"></section>
@@ -148,21 +149,21 @@
 
 
                 <section class="Hurgeltiin_ner_hayg">
-                    <form action="/action_page.php">
+                    <form >
                         <section class="Burtgel">
                             <label for="Ner">Нэр:</label>
-                            <input type="text" name="fname"><br><br>
+                            <input id="Ner" type="text" name="fname"><br><br>
                         </section>
 
                         <section class="Burtgel">
                             <label for="Utas">Утас:</label>
-                            <input type="text" name="phone"><br><br>
+                            <input id="Utas" type="text" name="phone"><br><br>
                         </section>
 
                         <section class="Burtgel">
-                            <label for="Duureg">Дүүрэг:</label>
+                            <label for="Duureg_id">Дүүрэг:</label>
                             <!-- HTML Dropdown list -->
-                            <select name="Duureg" id="Duureg_id">
+                            <select id="Duureg_id" name="Duureg" >
                                 <option value="SBD">Сүхбаатар дүүрэг</option>
                                 <option value="BGD">Баянгол дүүрэг</option>
                                 <option value="BZD">Баянзүрх дүүрэг</option>
@@ -173,7 +174,7 @@
                         </section>
 
                         <section class="Burtgel">
-                            <label for="Horoo">Хороо:</label>
+                            <label for="Horoo_id">Хороо:</label>
                             <select name="Horoo" id="Horoo_id">
                                 <option value="H_1">1-р хороо</option>
                                 <option value="H_2">2-р хороо</option>
@@ -190,22 +191,22 @@
 
                         <section class="Burtgel">
                             <label for="Bair">Байр:</label>
-                            <input type="text" name="Bair"><br><br>
+                            <input id="Bair" type="text" name="Bair"><br><br>
                         </section>
 
                         <section class="Burtgel">
                             <label for="Orts">Орц:</label>
-                            <input type="text" name="Orts"><br><br>
+                            <input id="Orts" type="text" name="Orts"><br><br>
                         </section>
 
                         <section class="Burtgel">
                             <label for="Toot">Тоот:</label>
-                            <input type="text" name="Toot"><br><br>
+                            <input id="Toot" type="text" name="Toot"><br><br>
                         </section>
 
                         <section class="Hurgeltiin_tovch">
-                            <button type="text" id="Butsah_button">Буцах</button>
-                            <button type="text" id="Urgeljluuleh_button">Үргэлжлүүлэх</button>
+                            <button type="button" id="Butsah_button">Буцах</button>
+                            <button type="button" id="Urgeljluuleh_button">Үргэлжлүүлэх</button>
                         </section>
 
                     </form>
@@ -215,7 +216,7 @@
             </section>
 
 
-            <section class="Tulburiin_heseg">
+            <section class="Tulburiin_heseg" id="Tulburiin_heseg">
                 <section>
                     <h2>Төлбөр төлөх хэсэг</h2>
                     <section class="Tulburiin_doorh_line"></section>
@@ -223,26 +224,18 @@
                 </section>
             <section class="Tulbur">
                 <section class="Zurag">
-                    <picture>
-                        <a href="https://www.qpay.mn/"> <img id="Qpay" src="./order_image/qpay.PNG" alt="Qpay"></a>
-                    </picture>
-
-                    <picture>
-                        <a href="https://www.apple.com/apple-pay/"> <img id="ApplePay" src="./order_image/apple.png"
+                    <a href="https://www.qpay.mn/"> <img id="Qpay" src="./order_image/qpayy.png" alt="Qpay"></a>
+                    <a href="https://www.apple.com/apple-pay/"> <img id="ApplePay" src="./order_image/applee.png"
                                 alt="ApplePay"></a>
-                    </picture>
-
-                    <picture>
-                        <a href="https://sbeta.khanbank.com/auth/login"> <img id="CreditCard"
-                                src="./order_image/cre.PNG" alt="CreditCard"></a>
-                    </picture>
+                    <a href="https://sbeta.khanbank.com/auth/login"> <img id="CreditCard"
+                                src="./order_image/credit_card.png" alt="CreditCard"></a>
                 </section>
 
                 <section class="Niit_une">
                     <p>Нийт</p>
                     <p>99'999₮</p>
 
-                    <button type="text">Буцах</button>
+                    <button type="button" id="Tulburiin_butsah">Буцах</button>
                 </section>
 
             </section>
@@ -252,116 +245,14 @@
         </section>
     </main>
 
-    <footer>
+    <footer-part></footer-part>
 
-        <section class="footer_top_section">
 
-        <section class="footer_logo">
-            <picture>
-                <!-- <source srcset="path/to/image-large.jpg" media="(min-width: 800px)">
-                <source srcset="path/to/image-medium.jpg" media="(max-width: 500px)"> -->
-                <a href="#"><img src="./homePage_image/footerLogo.png" alt="Pizza Hut Logo" width="70%"></a>
-            </picture>
-        </section>
-
-        <article class="about_us">
-            <h3>БИДНИЙ ТУХАЙ</h3>
-            <ul>
-                <li>
-                    <a href="#">Бидний тухай</a>
-                </li>
-                <li>
-                    <a href="#">Нийгмийн хариуцлага</a>
-                </li>
-                <li>
-                    <a href="#">Dine-in</a>
-                </li>
-            </ul>
-        </article>
-
-            <article class="about_us">
-                <h3>ТУСЛАМЖ ҮЙЛЧИЛГЭЭ</h3>
-                <ul>
-                    <li>
-                        <a href="#">Илчлэгийн мэдээлэл</a>
-                    </li>
-                    <li>
-                        <a href="#">Холбоо барих</a>
-                    </li>
-                    <li>
-                        <a href="#">Салбар хайх</a>
-                    </li>
-                </ul>
-            </article>
-
-            <address class="join_us">
-                <h3>БИДЭНТЭЙ НЭГДЭХ</h3>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-facebook"></i>
-                            <p>Facebook</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
-                            <p>Instagram</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fa-brands fa-youtube"></i>
-                            <p>Youtube</p>
-                        </a>
-                    </li>
-                   
-                </ul>
-            </address>
-
-            <section class="comment">
-
-                <h3>САНАЛТ ХҮСЭЛТ</h3>
-
-                <form>
-                    <section class="input1">
-                        <div>
-                            <label for="email">Эмайл</label>
-                            <input type="email" name="mail" placeholder="Ochirsukh@email.com">
-                            <br>
-                        </div>
-                        <div>
-                            <label for="phone">Утас</label>
-                            <input type="text" name="mail" placeholder="+976 ########">
-                            <br>
-                        </div>
-                    </section>
-                   
-                    <section class="input_text">
-                        <div>
-                        <label for="message">Мессеж</label>
-                        <textarea name="message" id="message" class="texting"></textarea>
-                        </div>
-                    <div class="button">
-                        <input type="submit" value="Илгээх">
-                    </div>
-                    </section>
-               
-                </form>
-                
-            </section>
-
-        </section>
-
-        <section class="footer_bottom_section">
-            <p>
-                © 2023  Оожоо Эрхэмээ Тэмүүлэн  ХХК. Зохиогчийн эрх хуулиар хамгаалагдсан Developed by <a href="#">Tavanbogd Cubix LLC </a>
-            </p>    
-
-        </section>
-
-    </footer>
-
+    <script src="./javascript/order.js" defer></script>
+    <script src="./javascript/header_footer.js" defer></script>
+    <script src="./javascript/menu_bar.js"></script>
+    <script src="./javascript/url.js"></script>
+    
 </body>
 
 </html>
