@@ -1,9 +1,8 @@
+class Header extends HTMLElement {
+  constructor() {
+    super();
 
-class Header extends HTMLElement{
-    constructor(){
-        super();
-
-        this.innerHTML =  `<header>
+    this.innerHTML = `<header>
         <a href="index.html">
           <picture class="logo">
               <!-- <source srcset="" media="(min-width:900px)" width="10px" heigth="80px"> -->
@@ -28,33 +27,23 @@ class Header extends HTMLElement{
           </nav>
          
       </header> 
-       `
-    }
+       `;
+  }
 
-    connectedCallback(){
+  connectedCallback() {}
 
-    }
-    
-    disconnectCallback(){
+  disconnectCallback() {}
 
-    }
-
-    attributeChangedCallback(attrName, oldVal, newVal) {
-
-    }
+  attributeChangedCallback(attrName, oldVal, newVal) {}
 }
 
-window.customElements.define('header-part', Header);
+window.customElements.define("header-part", Header);
 
-
-class Footer extends HTMLElement{
-
-   constructor(){
-        super();
-        this.innerHTML = ` <footer>
-
+class Footer extends HTMLElement {
+  constructor() {
+    super();
+    this.innerHTML = ` <footer>
         <section class="footer_top_section">
-
         <section class="footer_logo">
             <picture>
                 <!-- <source srcset="path/to/image-large.jpg" media="(min-width: 800px)">
@@ -62,9 +51,8 @@ class Footer extends HTMLElement{
                 <a href="#"><img src="./homePage_image/footerLogo.png" alt="Pizza Hut Logo" width="70%"></a>
             </picture>
         </section>
-
         <article class="about_us">
-            <h3>БИДНИЙ ТУХАЙ</h3>
+            <p>БИДНИЙ ТУХАЙ</p>
             <ul>
                 <li>
                     <a href="#">Бидний тухай</a>
@@ -77,9 +65,8 @@ class Footer extends HTMLElement{
                 </li>
             </ul>
         </article>
-
             <article class="about_us">
-                <h3>ТУСЛАМЖ ҮЙЛЧИЛГЭЭ</h3>
+                <p>ТУСЛАМЖ ҮЙЛЧИЛГЭЭ</p>
                 <ul>
                     <li>
                         <a href="#">Илчлэгийн мэдээлэл</a>
@@ -92,9 +79,8 @@ class Footer extends HTMLElement{
                     </li>
                 </ul>
             </article>
-
             <address class="join_us">
-                <h3>БИДЭНТЭЙ НЭГДЭХ</h3>
+                <p>БИДЭНТЭЙ НЭГДЭХ</p>
                 <ul>
                     <li>
                         <a href="#">
@@ -117,11 +103,8 @@ class Footer extends HTMLElement{
                    
                 </ul>
             </address>
-
             <section class="comment">
-
                 <h3>САНАЛТ ХҮСЭЛТ</h3>
-
                 <form>
                     <section class="input1">
                         <div>
@@ -149,19 +132,15 @@ class Footer extends HTMLElement{
                 </form>
                 
             </section>
-
         </section>
-
         <section class="footer_bottom_section">
             <p>
                 © 2023  Оожоо Эрхэмээ Тэмүүлэн  ХХК. Зохиогчийн эрх хуулиар хамгаалагдсан Developed by <a href="#">Tavanbogd Cubix LLC </a>
             </p>    
-
         </section>
-
     </footer>
-    `
-   }
+    `;
+  }
 }
 
-window.customElements.define('footer-part', Footer);
+window.customElements.define("footer-part", Footer);

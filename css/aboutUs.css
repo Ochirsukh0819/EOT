@@ -1,9 +1,9 @@
 @import url('root.css');
 
 * {
-    box-sizing: border-box;
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -31,7 +31,7 @@ body{
     padding: 1.2rem;
     border-radius: 1rem;
 }
-.main_objective > picture{
+.main_objective > section{
    display: flex;
    justify-content: center;
 }
@@ -58,7 +58,7 @@ body{
     font-size: var(--title_font_size);
 }
 
-#red_line{
+.red_line{
     width: 5.625rem;
     height: 0.01rem;
     background-color: var(--main_color);
@@ -160,7 +160,7 @@ body{
     color: var(--black_color);
 }
 .pre_next >a:hover{
-    background-color: var(--);
+    background-color: var(--red);
     color: var(--white_color);
 }
 
