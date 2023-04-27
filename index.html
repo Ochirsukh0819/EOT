@@ -59,19 +59,25 @@
     <main>
         <section class="Slider">
             <picture class="slide">
-                <source srcset="./homePage_image/cheese.webp" media="(min-width:1020px)">
-                <source srcset="./homePage_image/cheese.webp" media="(min-width:800px)">
+                <source data-srcset="./homePage_image/cheese.webp" media="(min-width:1020px)">
+                <source data-srcset="./homePage_image/cheese.webp" media="(min-width:800px)">
                 <img src="./homePage_image/cheese.webp" alt="cheese_pizza">
             </picture>
             <picture class="slide">
-                <source srcset="./homePage_image/det.webp" media="(min-width:1020px)">
-                <source srcset="./homePage_image/det.webp" media="(min-width:800px)">
+                <source data-srcset="./homePage_image/det.webp" media="(min-width:1020px)">
+                <source data-srcset="./homePage_image/det.webp" media="(min-width:800px)">
                 <img src="./homePage_image/det.webp" alt="det_pizza">
             </picture>
             <picture class="slide">
+<<<<<<< HEAD
                 <source srcset="./homePage_image/3x3.webp" media="(min-width:1020px)">
                 <source srcset="./homePage_image/3x3.webp" media="(min-width:800px)">
                 <img src="./homePage_image/3x3.webp" alt="unknown_pizza">
+=======
+                <source data-srcset="./homePage_image/pizza.jpg" media="(min-width:1020px)">
+                <source data-srcset="./homePage_image/pizza.jpg" media="(min-width:800px)">
+                <img src="./homePage_image/pizza.jpg" alt="unknown_pizza">
+>>>>>>> 42507fbf01ffd02369efab12ab99a10b7a473fd1
             </picture>
         </section>
         <script src="./javascript/slider.js"></script>
@@ -87,10 +93,10 @@
                 <a href="#">
                     <article class="products">
                         <picture>
-                            <source srcset="./homePage_image/bagts.png" media="(min-width:1290px)" width="100%">
-                            <source srcset="./homePage_image/bagts.png" media="(min-width:1160px)" width="380">
-                            <source srcset="./homePage_image/bagts.png" media="(min-width:800px)" width="320">
-                            <img src="./homePage_image/bagts.png" alt="Bagts">
+                            <source data-srcset="./homePage_image/bagts.png" media="(min-width:1290px)" width="100%">
+                            <source data-srcset="./homePage_image/bagts.png" media="(min-width:1160px)" width="380">
+                            <source data-srcset="./homePage_image/bagts.png" media="(min-width:800px)" width="320">
+                            <img  src="./homePage_image/bagts.png" alt="Bagts">
                         </picture>
                         <h2 class="overlay_text">Багц</h2>
                     </article>
@@ -98,9 +104,9 @@
                 <a href="#">
                     <article class="products">
                         <picture>
-                            <source srcset="./homePage_image/nemelt.png" media="(min-width:1290px)" width="450">
-                            <source srcset="./homePage_image/nemelt.png" media="(min-width:1160px)" width="380">
-                            <source srcset="./homePage_image/nemelt.png" media="(min-width:800px)" width="320">
+                            <source data-srcset="./homePage_image/nemelt.png" media="(min-width:1290px)" width="450">
+                            <source data-srcset="./homePage_image/nemelt.png" media="(min-width:1160px)" width="380">
+                            <source data-srcset="./homePage_image/nemelt.png" media="(min-width:800px)" width="320">
                             <img src="./homePage_image/nemelt.png" alt="Nemelt">
                         </picture>
                         <h2 class="overlay_text">Нэмэлт бүтээгдэхүүн</h2>
@@ -109,9 +115,9 @@
                 <a href="#">
                     <article class="products">
                         <picture>
-                            <source srcset="./homePage_image/pizza.png" media="(min-width:1290px)" width="450">
-                            <source srcset="./homePage_image/pizza.png" media="(min-width:1160px)" width="380">
-                            <source srcset="./homePage_image/pizza.png" media="(min-width:800px)" width="320">
+                            <source data-srcset="./homePage_image/pizza.png" media="(min-width:1290px)" width="450">
+                            <source data-srcset="./homePage_image/pizza.png" media="(min-width:1160px)" width="380">
+                            <source data-srcset="./homePage_image/pizza.png" media="(min-width:800px)" width="320">
                             <img src="./homePage_image/pizza.png" alt="Pizza">
                         </picture>
                         <h2 class="overlay_text">Пицца</h2>
@@ -133,7 +139,7 @@
                         <picture>
                             <!-- <source srcset="./homePage_image/news1.png" media="(min-width:1290px)" width="100%" height="100%">
                         <source srcset="./homePage_image/news1.png" media="(min-width:800px)" width="80%"> -->
-                            <img src="./homePage_image/news1.webp" alt="Pizza hut workplace">
+                            <img loading="lazy" src="./homePage_image/news1.webp" alt="Pizza hut workplace">
                         </picture>
                         <!-- <h2 class="news1_title">Ажлын байр</h2> -->
                     </section>
@@ -145,7 +151,7 @@
                             <!-- <source srcset="./homePage_image/news2.png" media="(min-width:1290px)" width="90%" height="90%">
                         <source srcset="./homePage_image/news2.png" media="(min-width:1080px)" height="90%">
                         <source srcset="./homePage_image/news2.png" media="(min-width:800px)" width="85%" > -->
-                            <img src="./homePage_image/news2.webp" alt="Pizza">
+                            <img loading="lazy" src="./homePage_image/news2.webp" alt="Pizza">
 
                         </picture>
 
@@ -161,7 +167,7 @@
                             <picture>
                                 <!-- <source srcset="./homePage_image/news3.png" media="(min-width:1290px)" width="100%" height="100%">
                         <source srcset="./homePage_image/news3.png" media="(min-width:800px)" width="80%" > -->
-                                <img src="./homePage_image/news3.png" alt="Mexico Pizza">
+                                <img loading="lazy" src="./homePage_image/news3.png" alt="Mexico Pizza">
                             </picture>
                             <h2 class="news2_title">Мехсик пицца</h2>
                         </section>
@@ -170,7 +176,7 @@
                     <a href="#">
                         <section class="news2_part">
                             <picture>
-                                <img src="./homePage_image/news4.png" alt="Pizza Branch">
+                                <img  loading="lazy" src="./homePage_image/news4.png" alt="Pizza Branch">
                             </picture>
                             <h2 class="news2_title">Салбарын мэдээлэл</h2>
                         </section>
@@ -300,8 +306,117 @@
         </section>
 
     </footer> -->
+    <footer>
 
-    <footer-part></footer-part>
+        <section class="footer_top_section">
+
+        <section class="footer_logo">
+            <picture>
+                <!-- <source srcset="path/to/image-large.jpg" media="(min-width: 800px)">
+                <source srcset="path/to/image-medium.jpg" media="(max-width: 500px)"> -->
+                <a href="#"><img src="./homePage_image/footerLogo.png" alt="Pizza Hut Logo" width="70%"></a>
+            </picture>
+        </section>
+
+        <article class="about_us">
+            <h3>БИДНИЙ ТУХАЙ</h3>
+            <ul>
+                <li>
+                    <a href="#">Бидний тухай</a>
+                </li>
+                <li>
+                    <a href="#">Нийгмийн хариуцлага</a>
+                </li>
+                <li>
+                    <a href="#">Dine-in</a>
+                </li>
+            </ul>
+        </article>
+
+            <article class="about_us">
+                <h3>ТУСЛАМЖ ҮЙЛЧИЛГЭЭ</h3>
+                <ul>
+                    <li>
+                        <a href="#">Илчлэгийн мэдээлэл</a>
+                    </li>
+                    <li>
+                        <a href="#">Холбоо барих</a>
+                    </li>
+                    <li>
+                        <a href="#">Салбар хайх</a>
+                    </li>
+                </ul>
+            </article>
+
+            <address class="join_us">
+                <h3>БИДЭНТЭЙ НЭГДЭХ</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                            <p>Facebook</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                            <p>Instagram</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                            <p>Youtube</p>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </address>
+
+            <section class="comment">
+
+                <h3>САНАЛТ ХҮСЭЛТ</h3>
+
+                <form>
+                    <section class="input1">
+                        <div>
+                            <label for="email">Эмайл</label>
+                            <input type="email" name="mail" placeholder="Ochirsukh@email.com">
+                            <br>
+                        </div>
+                        <div>
+                            <label for="phone">Утас</label>
+                            <input type="text" name="mail" placeholder="+976 ########">
+                            <br>
+                        </div>
+                    </section>
+                   
+                    <section class="input_text">
+                        <div>
+                        <label for="message">Мессеж</label>
+                        <textarea name="message" id="message" class="texting"></textarea>
+                        </div>
+                    <div class="button">
+                        <input type="submit" value="Илгээх">
+                    </div>
+                    </section>
+               
+                </form>
+                
+            </section>
+
+        </section>
+
+        <section class="footer_bottom_section">
+            <p>
+                © 2023  Оожоо Эрхэмээ Тэмүүлэн  ХХК. Зохиогчийн эрх хуулиар хамгаалагдсан Developed by <a href="#">Tavanbogd Cubix LLC </a>
+            </p>    
+
+        </section>
+
+    </footer>
+
+    <!-- <footer-part></footer-part> -->
     <script src="./javascript/menu_bar.js" type="module"></script>
 
 
