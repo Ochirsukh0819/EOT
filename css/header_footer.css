@@ -212,7 +212,13 @@ footer{
     position: relative;
 }
 
-.footer_logo > picture{
+.footer_logo > picture > a >img{
+    /* width: 150px;
+    height: 150px; */
+    /* width: 130px;
+    height: auto;
+    display: block;
+    margin: 0 auto; */
     position: absolute;
     bottom: 0;
     right: 0;

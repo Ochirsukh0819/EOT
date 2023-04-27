@@ -16,10 +16,9 @@ body {
 	margin-bottom: 5%;
 	display: grid;
 	grid-template-rows: auto auto;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 	font-size: 110%;
-    justify-items:center;
-    /* grid-auto-columns: 0.5fr; */
+	justify-items: center;
 }
 
 /*Deed taliin processiig aguulagch heseg*/
@@ -59,7 +58,7 @@ body {
 	display: flex;
 	border-radius: 50%;
 	color: #EE3A43;
-	align-items:  var(--align_items);
+	align-items: var(--align_items);
 	justify-content: center;
 }
 
@@ -82,35 +81,36 @@ body {
 #Hurgeltiin_heseg,
 .Tulburiin_heseg {
 	width: 85%;
-	/* max-width: 20.85rem;  */
 	height: 103%;
-	background-color:#FFFFFF;
+	background-color: #FFFFFF;
 	padding: 2.75rem 10%;
 	border-radius: var(--border_radius);
 	grid-row: 2;
 }
 
 
-#Sagsnii_heseg{
-    justify-content: center;
+#Sagsnii_heseg {
+	justify-content: center;
 	opacity: 1;
 }
+
 #Hurgeltiin_heseg,
-.Tulburiin_heseg{
+.Tulburiin_heseg {
 	opacity: 0.7;
 }
+
 /*buh garchiguud*/
 h2 {
 	text-align: center;
-    margin: 1.375rem 0;
+	margin: 1.375rem 0;
 }
 
 /*Garchig doorh medeelel*/
 .Tulburiin_heseg>section>p,
 .Hurgeltiin_medeelel>p,
 .Sagsnii_medeelel>p {
-	margin:1.125rem 0 1.875rem 0;
-	text-align: left;	
+	margin: 1.125rem 0 1.875rem 0;
+	text-align: left;
 }
 
 /*Garchig doorh zuraas*/
@@ -122,7 +122,7 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-    margin-top: 21px;
+	margin-top: 21px;
 }
 
 .Tulburiin_doorh_line {
@@ -178,7 +178,7 @@ h2 {
 	padding: 2%;
 	border: 1px solid #000000;
 	border-radius: var(--border_radius);
-	grid-column: 2;	
+	grid-column: 2;
 }
 
 /*Duureg, horoogiin input*/
@@ -240,14 +240,14 @@ h2 {
 /*Niit uniin  dun hesgiin niit*/
 .Tulburiin_heseg>.Tulbur>.Niit_une>p:nth-child(1) {
 	grid-column: 1;
-    margin: 1.1rem 0;
+	margin: 1.1rem 0;
 }
 
 /*Niit uniin  dun hegiin une*/
 .Tulburiin_heseg>.Tulbur>.Niit_une>p:nth-child(2) {
 	grid-column: 2;
 	text-align: right;
-    margin: 1.1rem 0;
+	margin: 1.1rem 0;
 }
 
 /*Tulbut tuluh hesgiin tovch*/
@@ -265,7 +265,6 @@ h2 {
 	border-radius: var(--border_radius);
 	cursor: pointer;
 	color: var(--black-color);
-	
 }
 
 /*Niit uniin tovch*/
@@ -280,15 +279,13 @@ h2 {
 .Hurgeltiin_ner_hayg>form>.Hurgeltiin_tovch>#Butsah_button {
 	margin-top: 1.25rem;
 	padding: 8% 15%;
-	
+
 }
 
 /*Hurgeltiin urgeljluuleh tovch*/
 .Hurgeltiin_ner_hayg>form>.Hurgeltiin_tovch>#Urgeljluuleh_button {
 	margin-top: 1.25rem;
 	padding: 4% 15%;
-	
-	/* margin: 1.875rem auto 0 0; */
 }
 
 /*Zahialgiin heseg*/
@@ -301,7 +298,7 @@ h2 {
 /*Buteegdehuun1*/
 .Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun {
 	background-color: var(--white_color);
-	padding:1.063rem 0.5rem 0 2.063rem;
+	padding: 1.063rem 0.5rem 0 2.063rem;
 	display: grid;
 	grid-template-columns: auto auto auto;
 	grid-template-rows: auto auto auto;
@@ -314,7 +311,7 @@ h2 {
 .Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Garchig {
 	grid-row: 1;
 	grid-column: 1 /3;
-    margin: 1.1rem 0;
+	margin: 1.1rem 0;
 }
 
 /*Buteegdehuun1 songolt*/
@@ -341,7 +338,6 @@ h2 {
 	border: 1px solid #CEB79B;
 	cursor: pointer;
 	color: #CEB79B;
-	/* padding: 30% 40%; */
 }
 
 /*Buteegdehuun1 hool nemeh heseg*/
@@ -351,7 +347,6 @@ h2 {
 	grid-column: 1;
 	display: grid;
 	grid-template-columns: auto auto auto;
-	/* height: 2.188rem; */
 }
 
 /*Buteegdehuun1 hool nemeh hasah tovch*/
@@ -375,7 +370,7 @@ h2 {
 	height: 1.75rem;
 	grid-column: 2;
 	text-align: center;
-    margin: 1.1rem 0;
+	margin: 1.1rem 0;
 }
 
 .Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Hool_nemeh>.Hasah {
@@ -387,7 +382,7 @@ h2 {
 	grid-row: 3;
 	grid-column: 2;
 	text-align: left;
-    margin: 1.1rem 10px;
+	margin: 1.1rem 10px;
 }
 
 /*Sagsnii niit une+tovch*/
@@ -426,9 +421,9 @@ h2 {
 	.container {
 		display: grid;
 		grid-template-rows: auto auto;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-		align-items:  var(--align_items);
-        justify-items:center;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		align-items: var(--align_items);
+		justify-items: center;
 	}
 
 	/*Deed taliin processiig aguulagch heseg*/
@@ -440,23 +435,12 @@ h2 {
 		display: block;
 		grid-column: 1 / 3;
 		grid-row: 1;
-		font-size: 90%;		
+		font-size: 90%;
 	}
+
 	/*Hurgeltiin zurag*/
 	.steps>#Ehnii_version {
 		width: 22%;
-	}
-	/*Sagsni heseg*/
-	.Sagsnii_heseg {
-		width: 85%;
-		height: 105%;
-		background: var(--column_background);
-		padding: 2.4rem 8% 0 8%;
-		display: none;
-		grid-row: 2;
-		grid-column: 2;
-        margin: 0 auto 0 auto;
-        grid-column: 1 / 3;
 	}
 
 	/*Hurgelt bolon Tulburiin heseg*/
@@ -471,6 +455,10 @@ h2 {
 		grid-column: 2;
 	}
 
+	.Sagsnii_heseg{
+		display: none;
+	}
+
 	/*Hurgelt bolon Tulburiin heseg*/
 	#Hurgeltiin_heseg,
 	.Tulburiin_heseg {
@@ -478,14 +466,14 @@ h2 {
 		height: 105%;
 		background: var(--column_background);
 		padding: 2.4rem 8% 0 8%;
-		margin: 0 1px;	
+		margin: 0 1px;
 	}
 
-	#Butsah_button{
+	#Butsah_button {
 		display: none;
 	}
 
-	#Urgeljluuleh_button{
+	#Urgeljluuleh_button {
 		background-color: var(--process_background);
 		border: 1px solid #EE3A43;
 		border-radius: var(--border_radius);
@@ -493,14 +481,14 @@ h2 {
 		color: var(--white_color);
 		margin: 0 auto 0 auto;
 		display: block;
-        grid-column: 1 / 3;
+		grid-column: 1 / 3;
 	}
 
-    /*3 zurgiig aguulagch section*/
-    .Tulbur {
-        padding-top: 8%;
-    }
-	
+	/*3 zurgiig aguulagch section*/
+	.Tulbur {
+		padding-top: 8%;
+	}
+
 	/*Qpay heseg*/
 	.Tulbur>.Zurag>picture>a>#Qpay {
 		width: 6.688rem;
@@ -509,14 +497,14 @@ h2 {
 
 	/*Applepay heseg*/
 	.Tulbur>.Zurag>picture>a>#ApplePay {
-        margin-top: 3%;
+		margin-top: 3%;
 		width: 11.5rem;
 		height: 6.813rem;
 	}
 
 	/*Creditcard heseg*/
 	.Tulbur>.Zurag>picture>a>#CreditCard {
-        margin-top: 3%;
+		margin-top: 3%;
 		width: 8rem;
 		height: 5.688rem;
 	}
@@ -527,7 +515,7 @@ h2 {
 	}
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767.9px) {
 
 	/*Aguulagch heseg*/
 	.container {
@@ -536,9 +524,9 @@ h2 {
 		grid-template-rows: auto auto;
 		grid-template-columns: repeat(1, minmax(0, 1fr));
 		row-gap: 3.5%;
-		align-items:  var(--align_items);
-		justify-items: center;	
-        margin-bottom: 10%;
+		align-items: var(--align_items);
+		justify-items: center;
+		margin-bottom: 10%;
 	}
 
 	/*Processiin heseg*/
@@ -546,20 +534,11 @@ h2 {
 		display: none;
 	}
 
-	/*Sagsnii heseg*/
-	.Sagsnii_heseg {
-		max-width: 25rem;
-		height: 95%;
-		padding: 1.4rem 15%;
-		display: none;
-		grid-row: 1 / 3;
-	}
-
 	/*Hurgeltiin heseg*/
 	#Hurgeltiin_heseg {
 		grid-row: 1;
 		opacity: 1;
-        margin-top: 40px;
+		margin-top: 40px;
 	}
 
 	/*Tulburiin heseg*/
@@ -568,46 +547,18 @@ h2 {
 		grid-row: 2;
 	}
 
+	.Sagsnii_heseg{
+		display: none;
+	}
+
 	/*Hurgelt bolon tulburiin heseg*/
 	#Hurgeltiin_heseg,
 	.Tulburiin_heseg {
 		/* width: 75%; */
-        max-width: 370px;
+		max-width: 370px;
 		height: 100%;
 		padding: 1rem 6% 1rem 6%;
 		/* display: none; */
-	}
-
-	/*Buteegdehuun1 ustgah tovch*/
-	.Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Ustgah {
-		width: 1.35rem;
-		height: 1.35rem;
-		text-align: center;
-	}
-
-	/*Buteegdehuun1 hool nemeh hasah tovch*/
-	.Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Hool_nemeh>.Nemeh,
-	.Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Hool_nemeh>.Hasah {
-		width: 1.35rem;
-		height: 1.35rem;
-		background-color: var(--white_color);
-		margin-top: 0.95rem;
-		border-radius: 0.5rem;
-		border: 1px solid #000000;
-		cursor: pointer;
-	}
-
-	.Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Hool_nemeh>p {
-		width: 1.35rem;
-		height: 1.35rem;
-		grid-column: 2;
-		text-align: center;
-		font-size: 95%;
-	}
-
-	/*Buteegdehuun1 hoolnii uniin heseg*/
-	.Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Une {
-		font-size: 95%;
 	}
 
 	/*Hurgeltiin ner hayg avah heseg*/
@@ -643,19 +594,22 @@ h2 {
 		cursor: pointer;
 		color: var(--white_color);
 		grid-column: 1/3;
-        margin: 0 auto 0 auto;
+		margin: 0 auto 0 auto;
 		display: block;
 	}
+
 	/*Nitt uniin tovch*/
 	.Niit_une>button {
 		padding: 3% 8%;
 	}
-	#Butsah_button{
+
+	#Butsah_button {
 		display: none;
 	}
+
 	/*Tulburiin hesgiin section*/
 	.Tulbur {
-        padding-top: 10px;
+		padding-top: 10px;
 		row-gap: 1px;
 	}
 
