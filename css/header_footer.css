@@ -309,10 +309,11 @@ footer {
     }
 
     .footer_logo>picture {
-        top: 1rem;
         width: var(--main_width);
         display: flex;
         justify-content: center;
+        top: 1rem;
+        
     }
 
     .comment {
