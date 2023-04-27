@@ -180,6 +180,9 @@ body{
     color: var(--white_color);
 }
 
+.homePage-video{
+    text-align: center;
+}
 
 
 @media only screen and (max-width: 75rem){
