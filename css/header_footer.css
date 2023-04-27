@@ -323,7 +323,12 @@ footer{
     .footer_bottom_section{
         text-align: center;
     }
-    
-    
+}
 
+
+@media only screen and (max-width: 1450px)  {
+    .footer_top_section{
+        display: grid;
+        grid-template-columns: 15% 15% 15% 15% 40%;
+    }
 }
