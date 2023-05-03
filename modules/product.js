@@ -1,4 +1,4 @@
-//Product class renderlej delgetsend zurah heseg
+const url = new URL(window.location.href);
 class Product {
   constructor(product) {
     this.image = product.image;
@@ -7,7 +7,7 @@ class Product {
   }
 
   Render() {
-    // return `  <article>
+    // return `<article>
     //     <a href="#">
     //         <picture >
     //             <img src="${this.image}"  alt="Маханд дурлагдсад">
@@ -21,115 +21,50 @@ class Product {
   }
 }
 
-// module helbereer json url awj json bolgood render hesegtee damjuulj bH
 export default class Module_Product {
-  // baiguulagcjiin damjuulj url awj bgaa heseg
   constructor(json_url) {
     this.json_url = json_url;
   }
 
-  download() {
-    // jsonoo duudaj bgaa
-    fetch(`${this.json_url}`)
-      .then((respone) => {
-        respone.json().then((data) => {
-          // json object helbert shiljsen
-          console.log("DATA", data);
+  download(element) {
+    const products = document.getElementById("food");
+    const deals = document.getElementsByClassName("product1")[0];
+    const pizza = document.getElementsByClassName("product2")[0];
+    const sides = document.getElementsByClassName("product3")[0];
+    const drink = document.getElementsByClassName("product4")[0];
 
-          // class ner bolon id geer barij bgaa heseg
-          const products = document.getElementById("food");
-          const sides = document.getElementsByClassName("product3")[0];
-          const drink = document.getElementsByClassName("product4")[0];
-          const pizza = document.getElementsByClassName("product2")[0];
-          const deals = document.getElementsByClassName("product1")[0];
-
-          // nemelt heseg deer darah vyd event medrej bgaa
-          sides.addEventListener("click", () => {
-            //herwee food hesegt ymr negen json vvssen bol tsewerlej bgaa heseg
-            if (products.hasChildNodes()) {
-              while (products.firstChild) {
-                products.removeChild(products.firstChild);
-              }
-            }
-
-            // food dotor json renderlej oruulj bna
-            products.insertAdjacentHTML(
-              "afterbegin",
-              // jsonbin ees irsen jsonoo zowhon sides hesgeer dawtaltaar gvih vydee Product classiin object vvsgej render hiih vydee utgiig ogj view heseg haruulj bgaa
-              data.record.sides
-                .map((newproduct) => {
-                  const new_obj = new Product(newproduct);
-                  return new_obj.Render();
-                })
-                .join("") // , bolon aldaag zasaj json bvree neg bvtetsend oruulj bga
-            );
-          });
-
-          // drink heseg deer event sonsoj bna
-          drink.addEventListener("click", () => {
-            //herwee food hesegt ymr negen json vvssen bol tsewerlej bgaa heseg
-            if (products.hasChildNodes()) {
-              while (products.firstChild) {
-                products.removeChild(products.firstChild);
-              }
-            }
-            products.insertAdjacentHTML(
-              "afterbegin",
-              // jsonbin ees jsonoosoo zowhon drink hesgiig map ashiglaj dawtaltaar gvij render hesegtee damjuulj view heseg haruulj bna
-              data.record.drink
-                .map((newproduct) => {
-                  const new_obj = new Product(newproduct);
-                  return new_obj.Render();
-                })
-                .join("")
-            );
-          });
-          // pizza deer darah vyd event sonsoj bna
-          pizza.addEventListener("click", () => {
-            if (products.hasChildNodes()) {
-              while (products.firstChild) {
-                products.removeChild(products.firstChild);
-              }
-            }
-            products.insertAdjacentHTML(
-              "afterbegin",
-              data.record.pizzas
-                .map((newproduct) => {
-                  const new_obj = new Product(newproduct);
-                  return new_obj.Render();
-                })
-                .join("")
-            );
-          });
-
-          deals.addEventListener("click", () => {
-            if (products.hasChildNodes()) {
-              while (products.firstChild) {
-                products.removeChild(products.firstChild);
-              }
-            }
-            products.insertAdjacentHTML(
-              "afterbegin",
-              data.record.deals
-                .map((newproduct) => {
-                  const new_obj = new Product(newproduct);
-                  return new_obj.Render();
-                })
-                .join("")
-            );
-          });
-
-          products.insertAdjacentHTML(
-            "afterbegin",
-            data.record.drink
-              .map((newproduct) => {
-                const new_obj = new Product(newproduct);
-                return new_obj.Render();
-              })
-              .join("")
-          );
+    fetch(`${this.json_url}`).then((response) => {
+      response.json().then((data) => {
+        const filteredProducts = data.record.filter((product) => {
+          return product.category === element;
         });
-      })
-      .catch((err) => console.log(err));
+        products.insertAdjacentHTML(
+          "afterbegin",
+          filteredProducts
+            .map((newproduct) => {
+              const new_obj = new Product(newproduct);
+              return new_obj.Render();
+            })
+            .join("")
+        );
+
+        deals.addEventListener("click", () => {
+          url.searchParams.set("category", "deals");
+          window.location.href = url.toString();
+        });
+        pizza.addEventListener("click", () => {
+          url.searchParams.set("category", "pizza");
+          window.location.href = url.toString();
+        });
+        sides.addEventListener("click", () => {
+          url.searchParams.set("category", "sides");
+          window.location.href = url.toString();
+        });
+        drink.addEventListener("click", () => {
+          url.searchParams.set("category", "drink");
+          window.location.href = url.toString();
+        });
+      });
+    });
   }
 }

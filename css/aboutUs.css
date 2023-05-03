@@ -155,16 +155,22 @@ body{
     flex-direction: row;
     gap: 2rem;
 }
-.pre_next > a{
+.pre_next > p{
     text-decoration: none;
     color: var(--black_color);
+    cursor: pointer;
 }
-.pre_next >a:hover{
+.pre_next >p:hover{
     background-color: var(--red);
-    color: var(--white_color);
+    /* color: var(--white_color); */
 }
+/* .circle{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+} */
 
-.pre_next > .circle a{
+.pre_next > .circle span{
     background-color: var(--main_bg_color);
     padding: 0.5rem 1rem 0.6rem 1rem;
     border:1px solid var(--main_bg_color);
@@ -173,9 +179,10 @@ body{
     text-decoration: none;
     font-size: 1.25rem;
     color: var(--black_color);
+    cursor: pointer;
 }
 
-.pre_next > .circle  a:hover{
+.pre_next > .circle span:hover{
     background-color: var(--main_color);
     color: var(--white_color);
 }
@@ -274,9 +281,10 @@ body{
     .main_objective{
         width: 80%;
     }   
-    .pre_next > .circle  a{
+    .pre_next > .circle  p{
         font-size: 70%;
         padding: 0.5rem 0.6rem 0.6rem 0.6rem;
+        cursor: pointer;
     }
     .pre_next {
         margin-left:0.1rem; 
