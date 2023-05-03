@@ -42,7 +42,8 @@ class Product extends HTMLElement {
       cart_full.insertAdjacentHTML("beforeend", orderHTML);
 
       document.getElementById("add").innerHTML = ++i;
-      document.getElementById("total_price").innerHTML = "$ " + total + ".00 ";
+      document.getElementById("total_p  rice").innerHTML =
+        "$ " + total + ".00 ";
     });
 
     // if (localStorage.getItem("key") != null) {
