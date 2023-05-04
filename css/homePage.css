@@ -112,7 +112,7 @@ body{
 
 .news2{
     display: grid;
-    grid-template-columns: repeat(3,17.5rem);
+    grid-template-columns: repeat(3, 17.5rem);
     grid-gap: 1rem;
 }
 
@@ -217,11 +217,6 @@ body{
 
    overflow: hidden;
 }
-
-/* .news1_part>picture>img{
-    width: 95%;
-    height: 100%;
-} */
 
 .news1_part:hover> .news1_title,
 .pizza_pic:hover> .news1_title,
