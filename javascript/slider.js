@@ -10,6 +10,7 @@ function activeNav() {
   }
 
   index++;
+  
   if (index > slides.length) {
     index = 1;
   }

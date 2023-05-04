@@ -119,7 +119,7 @@ main{
   /* cart */
 
   .cart{
-    width: 25%;
+    width: 30%;
     margin-top: 2rem;
     background-color: var(--white_color);
     display: flex;
