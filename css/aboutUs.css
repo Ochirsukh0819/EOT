@@ -187,7 +187,9 @@ body{
     color: var(--white_color);
 }
 
-
+.homePage-video{
+    text-align: center;
+}
 
 @media only screen and (max-width: 75rem){
     #medeenvvd{
@@ -224,6 +226,9 @@ body{
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
         gap: 1rem;
+    }
+    .homePage-video > video{
+        width: 100%;
     }
 }
 
