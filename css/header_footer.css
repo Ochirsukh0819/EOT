@@ -255,6 +255,10 @@ footer {
     color: var(--footer_p_color);
 }
 
+.footer_bottom_section>p>a{
+    color:aliceblue;
+}
+
 @media(max-width: 1200px) {
     .head_menu {
         transition: all 0.4s ease;
