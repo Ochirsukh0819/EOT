@@ -73,9 +73,6 @@ header {
     cursor: pointer;
 }
 
-
-
-
 #circle {
 
     width: 1.2rem;
@@ -253,6 +250,10 @@ footer {
     justify-content: center;
     padding: var(--footer_padding);
     color: var(--footer_p_color);
+}
+
+.footer_bottom_section>p>a{
+    color:aliceblue;
 }
 
 @media(max-width: 1200px) {
