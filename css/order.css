@@ -59,7 +59,7 @@ body {
 	border-radius: 50%;
 	color: #EE3A43;
 	align-items: var(--align_items);
-	justify-content: center;
+	/* justify-content: center; */
 }
 
 /*Activated circle*/
@@ -79,7 +79,7 @@ body {
 /*3 columniin heseg*/
 #Sagsnii_heseg,
 #Hurgeltiin_heseg,
-.Tulburiin_heseg {
+#Tulburiin_heseg {
 	width: 85%;
 	height: 103%;
 	background-color: #FFFFFF;
@@ -95,7 +95,7 @@ body {
 }
 
 #Hurgeltiin_heseg,
-.Tulburiin_heseg {
+#Tulburiin_heseg {
 	opacity: 0.7;
 }
 
@@ -106,7 +106,7 @@ h2 {
 }
 
 /*Garchig doorh medeelel*/
-.Tulburiin_heseg>section>p,
+#Tulburiin_heseg>section>p,
 .Hurgeltiin_medeelel>p,
 .Sagsnii_medeelel>p {
 	margin: 1.125rem 0 1.875rem 0;
@@ -209,25 +209,25 @@ h2 {
 }
 
 /*Qpay heseg*/
-.Tulbur>.Zurag>a>#Qpay {
+#Qpay {
 	width: 7.688rem;
 	height: 7.688rem;
 }
 
 /*Applepay heseg*/
-.Tulbur>.Zurag>a>#ApplePay {
+#ApplePay {
 	width: 13.75rem;
 	height: 8.125rem;
 }
 
 /*Creditcard heseg*/
-.Tulbur>.Zurag>a>#CreditCard {
+#CreditCard {
 	width: 9rem;
 	height: 6.313rem;
 }
 
 /*Niit uniin  dun*/
-.Tulburiin_heseg>.Tulbur>.Niit_une {
+#Tulburiin_heseg>.Tulbur>.Niit_une {
 	padding-top: 5%;
 	display: grid;
 	grid-template-columns: auto auto;
@@ -238,13 +238,13 @@ h2 {
 }
 
 /*Niit uniin  dun hesgiin niit*/
-.Tulburiin_heseg>.Tulbur>.Niit_une>p:nth-child(1) {
+#Tulburiin_heseg>.Tulbur>.Niit_une>p:nth-child(1) {
 	grid-column: 1;
 	margin: 1.1rem 0;
 }
 
 /*Niit uniin  dun hegiin une*/
-.Tulburiin_heseg>.Tulbur>.Niit_une>p:nth-child(2) {
+#Tulburiin_heseg>.Tulbur>.Niit_une>p:nth-child(2) {
 	grid-column: 2;
 	text-align: right;
 	margin: 1.1rem 0;
@@ -277,14 +277,14 @@ h2 {
 
 /*Hurgeltiin butsah tovch*/
 .Hurgeltiin_ner_hayg>form>.Hurgeltiin_tovch>#Butsah_button {
-	margin-top: 1.25rem;
+	/* margin-top: 1.25rem; */
 	padding: 8% 15%;
 
 }
 
 /*Hurgeltiin urgeljluuleh tovch*/
 .Hurgeltiin_ner_hayg>form>.Hurgeltiin_tovch>#Urgeljluuleh_button {
-	margin-top: 1.25rem;
+	/* margin-top: 1.25rem; */
 	padding: 4% 15%;
 }
 
@@ -450,18 +450,30 @@ h2 {
 		opacity: 1;
 	}
 
-	.Tulburiin_heseg {
+	#Tulburiin_heseg {
 		grid-row: 2;
 		grid-column: 2;
 	}
 
-	.Sagsnii_heseg{
+	#Sagsnii_heseg{
+		grid-row: 2;
+		grid-column: 1;
 		display: none;
+	}
+
+
+	#Sagsnii_heseg {
+		width: 85%;
+		height: 105%;
+		background: var(--column_background);
+		padding: 2.4rem 8% 0 8%;
+		margin: 0 1px;
+
 	}
 
 	/*Hurgelt bolon Tulburiin heseg*/
 	#Hurgeltiin_heseg,
-	.Tulburiin_heseg {
+	#Tulburiin_heseg {
 		width: 85%;
 		height: 105%;
 		background: var(--column_background);
@@ -490,20 +502,20 @@ h2 {
 	}
 
 	/*Qpay heseg*/
-	.Tulbur>.Zurag>picture>a>#Qpay {
+	#Qpay {
 		width: 6.688rem;
 		height: 6.688rem;
 	}
 
 	/*Applepay heseg*/
-	.Tulbur>.Zurag>picture>a>#ApplePay {
+	#ApplePay {
 		margin-top: 3%;
 		width: 11.5rem;
 		height: 6.813rem;
 	}
 
 	/*Creditcard heseg*/
-	.Tulbur>.Zurag>picture>a>#CreditCard {
+	#CreditCard {
 		margin-top: 3%;
 		width: 8rem;
 		height: 5.688rem;
@@ -542,7 +554,7 @@ h2 {
 	}
 
 	/*Tulburiin heseg*/
-	.Tulburiin_heseg {
+	#Tulburiin_heseg {
 		margin-bottom: 1.25rem;
 		grid-row: 2;
 	}
@@ -553,7 +565,7 @@ h2 {
 
 	/*Hurgelt bolon tulburiin heseg*/
 	#Hurgeltiin_heseg,
-	.Tulburiin_heseg {
+	#Tulburiin_heseg {
 		/* width: 75%; */
 		max-width: 370px;
 		height: 100%;
@@ -620,19 +632,19 @@ h2 {
 	}
 
 	/*Qpay heseg*/
-	.Tulbur>.Zurag>picture>a>#Qpay {
+	#Qpay {
 		width: 5.688rem;
 		height: 5.688rem;
 	}
 
 	/*Applepay heseg*/
-	.Tulbur>.Zurag>picture>a>#ApplePay {
+	#ApplePay {
 		width: 10.5rem;
 		height: 6.25rem;
 	}
 
 	/*Creditcard heseg*/
-	.Tulbur>.Zurag>picture>a>#CreditCard {
+	#CreditCard {
 		width: 7rem;
 		height: 4.938rem;
 	}
