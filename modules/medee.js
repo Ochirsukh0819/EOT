@@ -6,7 +6,7 @@ class News {
     this.date = news.date;
   }
   // render news
-  Render() {
+  Render() {  
     return ` <article class="neg_medee">
              <picture>
               <img src="${this.image}" alt="News1">

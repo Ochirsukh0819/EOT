@@ -111,6 +111,10 @@ body{
     color: var(--white_color);
   }
 
+   .close{
+    cursor: pointer;
+  }
+
   .cart{
     width: 25%;
     margin-top: 2rem;
