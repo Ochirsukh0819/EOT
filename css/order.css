@@ -12,6 +12,9 @@ body {
 	overflow-x: hidden;
 }
 
+h6{
+	display: none;
+}
 .container {
 	margin-bottom: 5%;
 	display: grid;
@@ -238,13 +241,13 @@ h2 {
 }
 
 /*Niit uniin  dun hesgiin niit*/
-#Tulburiin_heseg>.Tulbur>.Niit_une>p:nth-child(1) {
+#Tulburiin_heseg>.Tulbur>.Niit_une>h4{
 	grid-column: 1;
 	margin: 1.1rem 0;
 }
 
 /*Niit uniin  dun hegiin une*/
-#Tulburiin_heseg>.Tulbur>.Niit_une>p:nth-child(2) {
+#Tulburiin_heseg>.Tulbur>.Niit_une>p{
 	grid-column: 2;
 	text-align: right;
 	margin: 1.1rem 0;
@@ -394,12 +397,12 @@ h2 {
 }
 
 /*Sagsnii niit une*/
-.Sagsnii_dotorh>.Sags_zahialga>.Sagsnii_tovch>p:nth-child(1) {
+.Sagsnii_dotorh>.Sags_zahialga>.Sagsnii_tovch>h4{
 	grid-column: 1;
 }
 
 /*Sagsnii une*/
-.Sagsnii_dotorh>.Sags_zahialga>.Sagsnii_tovch>p:nth-child(2) {
+.Sagsnii_dotorh>.Sags_zahialga>.Sagsnii_tovch>p {
 	grid-column: 2;
 	text-align: right;
 }
@@ -559,7 +562,7 @@ h2 {
 		grid-row: 2;
 	}
 
-	.Sagsnii_heseg{
+	#Sagsnii_heseg{
 		display: none;
 	}
 
