@@ -11,6 +11,10 @@ body{
     
 }
 
+h6{
+    display:none;
+}
+
 /* Slider part */ 
 .Slider{
     width: var(--main_width);
@@ -230,6 +234,10 @@ body{
         grid-gap: 1rem;
         justify-items: center;
     }
+
+    #odd_pic > .news2_title{
+        width: 205%;
+    }
     
 }   
 
@@ -264,6 +272,10 @@ body{
     .products > picture > img, .products{
         width: 90%;
         margin-left: 5%;
+    }
+
+    #odd_pic > .news2_title{
+        width: 140%;
     }
 }
 

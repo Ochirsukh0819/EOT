@@ -3,9 +3,9 @@
 /*Body heseg*/
 body {
 	background-color: #f4e9e0;
-	background-image: radial-gradient(#f6a24a 2px, transparent 2px), radial-gradient(#f6a24a 2px, #f4e9e0 2px);
-	background-size: 80px 80px;
-	background-position: 0 0, 40px 40px;
+	background-image: radial-gradient(#f6a24a 0.125rem, transparent 0.125rem), radial-gradient(#f6a24a 0.125rem, #f4e9e0 0.125rem);
+	background-size: 5rem 5rem;
+	background-position: 0 0, 2.5rem 2.5rem;
 	background-attachment: fixed;
 	opacity: 1;
 	text-align: left;
@@ -120,12 +120,12 @@ h2 {
 .Tulburiin_doorh_line,
 .Hurgeltiin_doorh_line,
 .Sagsnii_doorh_line {
-	height: 1px;
+	height: 0.063rem;
 	background: black;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
-	margin-top: 21px;
+	margin-top: 1.313rem;
 }
 
 .Tulburiin_doorh_line {
@@ -179,7 +179,7 @@ h2 {
 	width: 55%;
 	background-color: var(--white_color);
 	padding: 2%;
-	border: 1px solid #000000;
+	border: 0.063rem solid #000000;
 	border-radius: var(--border_radius);
 	grid-column: 2;
 }
@@ -190,7 +190,7 @@ h2 {
 	width: 55%;
 	background-color: var(--white_color);
 	padding: 2%;
-	border: 1px solid #000000;
+	border: 0.063rem solid #000000;
 	border-radius: var(--border_radius);
 }
 
@@ -264,7 +264,7 @@ h2 {
 .Niit_une>button,
 .Hurgeltiin_ner_hayg>form>section>button {
 	background-color: var(--white_color);
-	border: 1px solid #000000;
+	border: 0.063rem solid #000000;
 	border-radius: var(--border_radius);
 	cursor: pointer;
 	color: var(--black-color);
@@ -306,7 +306,7 @@ h2 {
 	grid-template-columns: auto auto auto;
 	grid-template-rows: auto auto auto;
 	border-radius: var(--border_radius);
-	border: 1px solid #000000;
+	border: 0.063rem solid #000000;
 
 }
 
@@ -324,7 +324,7 @@ h2 {
 	padding: 2%;
 	grid-row: 2;
 	grid-column: 1;
-	border: 1px solid #000000;
+	border: 0.063rem solid #000000;
 	border-radius: 0.9rem;
 }
 
@@ -338,7 +338,7 @@ h2 {
 	grid-column: 3;
 	grid-row: 2;
 	border-radius: 50%;
-	border: 1px solid #CEB79B;
+	border: 0.063rem solid #CEB79B;
 	cursor: pointer;
 	color: #CEB79B;
 }
@@ -360,7 +360,7 @@ h2 {
 	background-color: var(--white_color);
 	margin-top: 0.867rem;
 	border-radius: 0.5rem;
-	border: 1px solid #000000;
+	border: 0.063rem solid #000000;
 	cursor: pointer;
 }
 
@@ -385,7 +385,7 @@ h2 {
 	grid-row: 3;
 	grid-column: 2;
 	text-align: left;
-	margin: 1.1rem 10px;
+	margin: 1.1rem 0.625rem;
 }
 
 /*Sagsnii niit une+tovch*/
@@ -413,7 +413,7 @@ h2 {
 	padding: 4% 7%;
 	grid-row: 2;
 	grid-column: 1 /3;
-	border: 1px solid #EE3A43;
+	border: 0.063rem solid #EE3A43;
 	border-radius: var(--border_radius);
 	cursor: pointer;
 	color: var(--white_color);
@@ -470,7 +470,7 @@ h2 {
 		height: 105%;
 		background: var(--column_background);
 		padding: 2.4rem 8% 0 8%;
-		margin: 0 1px;
+		margin: 0 0.063rem;
 
 	}
 
@@ -481,7 +481,7 @@ h2 {
 		height: 105%;
 		background: var(--column_background);
 		padding: 2.4rem 8% 0 8%;
-		margin: 0 1px;
+		margin: 0 0.063rem;
 	}
 
 	#Butsah_button {
@@ -490,7 +490,7 @@ h2 {
 
 	#Urgeljluuleh_button {
 		background-color: var(--process_background);
-		border: 1px solid #EE3A43;
+		border: 0.063rem solid #EE3A43;
 		border-radius: var(--border_radius);
 		cursor: pointer;
 		color: var(--white_color);
@@ -534,7 +534,7 @@ h2 {
 
 	/*Aguulagch heseg*/
 	.container {
-		/* margin: 4.25rem 10px 4rem 10px; */
+		/* margin: 4.25rem 0.625rem 4rem 0.625rem; */
 		display: grid;
 		grid-template-rows: auto auto;
 		grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -553,7 +553,7 @@ h2 {
 	#Hurgeltiin_heseg {
 		grid-row: 1;
 		opacity: 1;
-		margin-top: 40px;
+		margin-top: 2.5rem;
 	}
 
 	/*Tulburiin heseg*/
@@ -570,7 +570,7 @@ h2 {
 	#Hurgeltiin_heseg,
 	#Tulburiin_heseg {
 		/* width: 75%; */
-		max-width: 370px;
+		max-width: 23.125rem;
 		height: 100%;
 		padding: 1rem 6% 1rem 6%;
 		/* display: none; */
@@ -604,7 +604,7 @@ h2 {
 	.Hurgeltiin_ner_hayg>form>.Hurgeltiin_tovch>#Urgeljluuleh_button {
 		padding: 5% 10%;
 		background-color: var(--process_background);
-		border: 1px solid #EE3A43;
+		border: 0.063rem solid #EE3A43;
 		border-radius: var(--border_radius);
 		cursor: pointer;
 		color: var(--white_color);
@@ -624,14 +624,14 @@ h2 {
 
 	/*Tulburiin hesgiin section*/
 	.Tulbur {
-		padding-top: 10px;
-		row-gap: 1px;
+		padding-top: 0.625rem;
+		row-gap: 0.063rem;
 	}
 
 	/*3 zurag aguulsn section*/
 	.Tulbur>.Zurag {
 		/* margin-top: 5%; */
-		row-gap: 1px;
+		row-gap: 0.063rem;
 	}
 
 	/*Qpay heseg*/

@@ -2,17 +2,17 @@
 
 *{
     box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
+    padding: 0rem;
+    margin: 0rem;
 }
 
 body{
     width: 100%;
     background-color: #f4e9e0;
 	  opacity: 1;
-	  background-image:  radial-gradient(#f6a24a 2px, transparent 2px), radial-gradient(#f6a24a 2px, #f4e9e0 2px);
-	  background-size: 80px 80px;
-	  background-position: 0 0,40px 40px;
+	  background-image: radial-gradient(#f6a24a 0.125rem, transparent 0.125rem), radial-gradient(#f6a24a 0.125rem, #f4e9e0 0.125rem);
+	  background-size: 5rem 5rem;
+	  background-position: 0 0, 2.5rem 2.5rem;
 	  background-attachment: fixed;
 }
 
@@ -104,7 +104,7 @@ main{
   margin: 1.5rem 4rem 1rem 4rem;
   background-color: #FFD3A6;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   border-style: none;
   box-shadow: inset;
   cursor: pointer;
@@ -156,7 +156,7 @@ main{
     background-color: var(--white_color);
     border-radius: 1rem;
     margin-bottom: 1rem;
-    box-shadow: 0 0 5px 5px #F4F4F4;
+    box-shadow: 0 0 0.313rem 0.313rem #F4F4F4;
   } 
 
   .cart > .cart_full > article  h2{
@@ -174,9 +174,9 @@ main{
   .cart > .cart_full >  article > .part1> select{
     padding: 0.25rem 0.25rem 0.25rem 0.25rem;
     border-style: none;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     margin-left: 1rem;
-    box-shadow: 2px 2px #F4F4F4;
+    box-shadow: 0.125rem 0.125rem #F4F4F4;
   }
 
   .cart > .cart_full >  article > .part2{
@@ -193,7 +193,7 @@ main{
   }
 
   .cart > .cart_full > article > .part2 > .add_food > button{
-    padding: 3px;
+    padding: 0.188rem;
   }
 
   .cart > .cart_full > article > .part2 > p{
@@ -246,7 +246,7 @@ main{
   .products-preview .preview{
     background-color: #fff;
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     display: none;
     position: relative;
   }
@@ -290,7 +290,7 @@ main{
     flex-direction: column;
     gap: 1rem;
     border-radius: 1rem;
-    box-shadow: 0 0 2px 2px #cecbcb;
+    box-shadow: 0 0 0.125rem 0.125rem #cecbcb;
   }
   .par_part >h1{
     font-size: 1rem;
@@ -308,7 +308,7 @@ main{
     padding: 0.75rem 1.25rem;
     background-color: var(--main_color);
     border: none;
-    border-radius: 15px;
+    border-radius: 0.938rem;
     color: var(--header_background);
     margin-right: 2em;
     margin-left: 1em;
@@ -371,7 +371,7 @@ main{
     margin-top: 5%;
     margin-left: 15%;
     flex-shrink: 1;
-    gap: 0px;
+    gap: 0rem;
   }
 
   #food>article>a>picture>img {
