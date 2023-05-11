@@ -283,3 +283,20 @@ body{
         margin-left:0.1rem; 
     }
 }
+@media only screen and (max-width: 50rem) {
+    .main_objective{
+        width: 15rem;
+    }
+}
+
+@media only screen and (max-width: 62.5rem) {
+    .aboutUs_content{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .aboutUs_content > .Text {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }   
+}
