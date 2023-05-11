@@ -6,10 +6,18 @@ const TulburiinHeseg = document.getElementById("Tulburiin_heseg");
 const Tulburiin_butsah = document.getElementById("Tulburiin_butsah");
 const circle_two = document.getElementById("Hoyr_circle");
 const circle_three = document.getElementById("Hoyr_circle");
+const Sags_gargah = document.getElementById("cart");
+const Sagsnii_tovch = document.getElementById("Sagsnii_tovch");
+const Qpay = document.getElementById("Qpay");
+const Applepay = document.getElementById("ApplePay");
+const CreditCard = document.getElementById("CreditCard");
+const cart = document.getElementById("cart");
 
-Urgeljluuleh_button.disabled = true;
-Tulburiin_butsah.disabled = true;
-Butsah_button.disabled = true;
+
+// Urgeljluuleh_button.disabled = true;
+// Tulburiin_butsah.disabled = true;
+// Butsah_button.disabled = true;
+
 
 Sagsnii_tovch.addEventListener("click", () => {
   /*Sagsnii tovch darah uyed sagsiig blured bolgoj baina */
@@ -68,6 +76,7 @@ Urgeljluuleh_button.addEventListener("click", () => {
   Urgeljluuleh_button.disabled = true;
   Butsah_button.disabled = true;
   Tulburiin_butsah.disabled = false;
+  Qpay.enableAlert = true
 });
 
 Tulburiin_butsah.addEventListener("click", () => {
@@ -124,3 +133,18 @@ Butsah_button.addEventListener("click", () => {
   /*Process iin circle iin textiig ulaan bolgoj arilgaj baina */
   circle_two.style = "color:#EE3A43;";
 });
+
+Qpay.addEventListener('click', () =>
+{
+  alert("Таны төлбөр амжилттай хийгдлээ!");
+})
+
+Applepay.addEventListener('click', () =>
+{
+  alert("Таны төлбөр амжилттай хийгдлээ!");
+})
+
+CreditCard.addEventListener('click', () =>
+{
+  alert("Таны төлбөр амжилттай хийгдлээ!");
+})

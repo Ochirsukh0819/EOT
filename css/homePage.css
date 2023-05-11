@@ -1,14 +1,18 @@
 @import url('root.css');
 
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
     box-sizing: border-box;
 }
 
 body{
     width: 100%;
     
+}
+
+h6{
+    display:none;
 }
 
 /* Slider part */ 
@@ -31,21 +35,19 @@ body{
 }
 
 /*Product*/
-.product .product_title{
+.product, 
+.News {
     margin-top: var(--title_margin_top);
     padding-left: var(--title_padding_left);
 }
 
-.product .product_title>h1{
+.product >h1, 
+.News >h1{
     font-family: var(--header_footer_font_family);
     font-size: var(--title_font_size);
-}
-
-.red_line{
-    width: 5.625rem;
-    height: 0.01rem;
-    margin: var(--title_margin_top) 0px;
-    background-color: var(--main_color);
+    border-bottom: 0.01rem solid var(--main_color);
+    display: inline-block;
+    padding: var(--title_margin_top) 0rem;
 }
 
 .product_content{
@@ -82,19 +84,6 @@ body{
 }
 
 /*Information part*/
-
-.News .news_title{
-    margin-top: var(--news_margin_top);
-    padding-left: var(--title_padding_left);
-}
-
-.News .news_title>h1{
-    font-family: var(--header_footer_font_family);
-    font-size: var(--title_font_size);
-}
-
-
-
 .information_part{
     width: var(--main_width);
     margin-top: 3.75rem;
@@ -103,7 +92,6 @@ body{
     align-items: center ;
     gap: 1rem;
 }
-
 
 .news1{
     display: grid;
@@ -155,7 +143,7 @@ body{
 
 @keyframes slideFromBottom{
     0% {
-      transform: translateY(50px);
+      transform: translateY(3.125rem);
       opacity: 0;
     }
     100% {
@@ -170,7 +158,7 @@ body{
 
 @keyframes slideFromLeft{
     0% {
-      transform: translateX(-50px);
+      transform: translateX(-3.125rem);
       opacity: 0;
     }
     100% {
@@ -185,7 +173,7 @@ body{
 
 @keyframes slideFromRight{
     0% {
-      transform: translateX(50px);
+      transform: translateX(3.125rem);
       opacity: 0;
     }
     100% {
@@ -246,6 +234,10 @@ body{
         grid-gap: 1rem;
         justify-items: center;
     }
+
+    #odd_pic > .news2_title{
+        width: 205%;
+    }
     
 }   
 
@@ -281,6 +273,10 @@ body{
         width: 90%;
         margin-left: 5%;
     }
+
+    #odd_pic > .news2_title{
+        width: 140%;
+    }
 }
 
 @media only screen and (max-width: 33rem) {
@@ -302,13 +298,13 @@ body{
 
  @media only screen and (max-width: 72.5rem) {
     .Slider{
-        height: 300px;
+        height: 18.75rem;
     }
 } 
 
 @media only screen and (max-width: 33.75rem) {
     .Slider{
-        height: 100px;
+        height: 6.25rem;
     }
 
 } 

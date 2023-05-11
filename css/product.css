@@ -1,5 +1,6 @@
 @import url("root.css");
 
+<<<<<<< HEAD
 * {
   box-sizing: border-box;
   padding: 0px;
@@ -22,6 +23,33 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+=======
+*{
+    box-sizing: border-box;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+body{
+    width: 100%;
+    background-color: #f4e9e0;
+	  opacity: 1;
+	  background-image: radial-gradient(#f6a24a 0.125rem, transparent 0.125rem), radial-gradient(#f6a24a 0.125rem, #f4e9e0 0.125rem);
+	  background-size: 5rem 5rem;
+	  background-position: 0 0, 2.5rem 2.5rem;
+	  background-attachment: fixed;
+}
+
+h6{
+  display: none;
+}
+
+.product_page{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+>>>>>>> 489130a3fe4c0da997265f3ec629b0f1120f7c7a
 }
 
 .products {
@@ -96,7 +124,7 @@ main {
   margin: 1.5rem 4rem 1rem 4rem;
   background-color: #ffd3a6;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   border-style: none;
   box-shadow: inset;
   cursor: pointer;
@@ -137,6 +165,7 @@ ph-cart > .cart {
   align-items: center;
 }
 
+<<<<<<< HEAD
 .cart > .cart_full {
   height: 55rem;
   overflow-y: auto;
@@ -145,6 +174,18 @@ ph-cart > .cart {
   /* justify-content: center; */
   align-items: center;
 }
+=======
+   .cart > .cart_full > order-component > article{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    background-color: var(--white_color);
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 0.313rem 0.313rem #F4F4F4;
+  } 
+>>>>>>> 489130a3fe4c0da997265f3ec629b0f1120f7c7a
 
 order-component {
   display: block;
@@ -161,12 +202,22 @@ order-component {
   box-shadow: 0 0 5px 5px #f4f4f4;
 }
 
+<<<<<<< HEAD
 .cart > .cart_full > order-component > article h2 {
   width: 100%;
   font-size: 1.2rem;
   margin: 1rem 1rem 1rem 1.5rem;
   font-style: var(--header_footer_font_family);
 }
+=======
+  .cart > .cart_full > order-component > article > .part1> select{
+    padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+    border-style: none;
+    border-radius: 0.625rem;
+    margin-left: 1rem;
+    box-shadow: 0.125rem 0.125rem #F4F4F4;
+  }
+>>>>>>> 489130a3fe4c0da997265f3ec629b0f1120f7c7a
 
 .cart > .cart_full > order-component > article > .part1 {
   display: flex;
@@ -181,11 +232,17 @@ order-component {
   box-shadow: 2px 2px #f4f4f4;
 }
 
+<<<<<<< HEAD
 .cart > .cart_full > order-component > article > .part2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+=======
+  .cart > .cart_full >order-component > article > .part2 > .add_food > button{
+    padding: 0.188rem;
+  }
+>>>>>>> 489130a3fe4c0da997265f3ec629b0f1120f7c7a
 
 .cart > .cart_full > order-component > article > .part2 > .add_food {
   display: flex;
@@ -246,6 +303,7 @@ order-component {
   align-items: center;
 }
 
+<<<<<<< HEAD
 .par_part {
   width: 15rem;
   margin-bottom: 1rem;
@@ -278,6 +336,65 @@ order-component {
   margin-left: 1em;
   cursor: pointer;
 }
+=======
+  .par_part{
+    width: 15rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 0.125rem 0.125rem #cecbcb;
+  }
+  .par_part >h1{
+    font-size: 1rem;
+  }
+
+  .par_part  p span{
+    font-weight: bold;
+  }
+  .par_part > .price{
+    display: flex;
+    justify-content: end;
+  }
+  
+  .text_part > button{
+    padding: 0.75rem 1.25rem;
+    background-color: var(--main_color);
+    border: none;
+    border-radius: 0.938rem;
+    color: var(--header_background);
+    margin-right: 2em;
+    margin-left: 1em;
+    cursor: pointer;
+  }
+
+  .modal{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.625rem;
+    display: none;
+    position: relative;
+  }
+  .modal.active{
+    display: inline-block;
+  }
+  .modal .fa-times{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #EA942F;
+  }
+  .modal > .title > h1{
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+>>>>>>> 489130a3fe4c0da997265f3ec629b0f1120f7c7a
 
 .modal {
   background-color: #fff;
@@ -358,7 +475,7 @@ order-component {
     margin-top: 5%;
     margin-left: 15%;
     flex-shrink: 1;
-    gap: 0px;
+    gap: 0rem;
   }
 
   #food > article > a > picture > img {
@@ -367,9 +484,30 @@ order-component {
 }
 /*  dark mode */
 
+<<<<<<< HEAD
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--background_dark_mode);
     /* color: var(--color_dark_mode); */
   }
 }
+=======
+@media (prefers-color-scheme: dark){
+  body{
+    background-color:var(--background_dark_mode);
+    /* color:var(--color_dark_mode); */
+  } 
+}
+
+@media only screen and (max-device-width: 920px) and (orientation: landscape) and (max-device-height: 500px){
+  .cart{
+    display: flex;
+  }
+  .product_page{
+    display: flex;
+}
+.cart > .cart_empty > picture > img{
+  height: 70%;
+}
+}
+>>>>>>> 489130a3fe4c0da997265f3ec629b0f1120f7c7a
