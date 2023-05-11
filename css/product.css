@@ -372,3 +372,15 @@ h6{
     /* color:var(--color_dark_mode); */
   } 
 }
+
+@media only screen and (max-device-width: 920px) and (orientation: landscape) and (max-device-height: 500px){
+  .cart{
+    display: flex;
+  }
+  .product_page{
+    display: flex;
+}
+.cart > .cart_empty > picture > img{
+  height: 70%;
+}
+}
