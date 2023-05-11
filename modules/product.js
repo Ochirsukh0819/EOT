@@ -17,7 +17,7 @@ class Product {
     //     <p>${this.price}</p>
     //     <button type="submit">Сагсанд нэмэх</button>
     // </article>`;
-    return ` <product-component img=${this.image} title=${this.title} price=${this.price}></product-component> `;
+    return ` <product-component img=${this.image} title="${this.title}" price=${this.price}></product-component> `;
   }
 }
 

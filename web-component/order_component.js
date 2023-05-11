@@ -1,4 +1,4 @@
-class Order extends HTMLElement {
+export default class Order extends HTMLElement {
   constructor() {
     // const name = this.getAttribute("title1");
     // const price = this.getAttribute("price1");
@@ -14,7 +14,7 @@ class Order extends HTMLElement {
     const button_sub = document.getElementsByClassName("button_sub");
 
     this.innerHTML = `<article class="p_order">
-    <h2>${this.getAttribute("title")}</h2>
+    <h2 class="again">${this.getAttribute("title")}</h2>
     <div class="part1">
     <select name="төрөл">
         <option>Том пан</option>
@@ -44,12 +44,14 @@ class Order extends HTMLElement {
 
     this.update();
 
+    // add button click darah vyd event seonsoj bna
     for (let item of button_add) {
       item.addEventListener("click", () => {
         this.add_button(item);
       });
     }
 
+    // sub button click darah vyd event seonsoj bna
     for (let item of button_sub) {
       item.addEventListener("click", () => {
         this.sub_button(item);
@@ -74,7 +76,7 @@ class Order extends HTMLElement {
       this.cart_count += quantityValue;
       this.total = this.total + price;
       document.getElementById("total_price").innerHTML = this.total + ".00₮";
-      document.getElementById("add").innerHTML = this.cart_count;
+      document.getElementById("add").innerHTML = `${this.cart_count}`;
     }
   }
 
@@ -125,6 +127,25 @@ class Order extends HTMLElement {
     this.total = this.total - price;
     document.getElementById("total_price").innerHTML = this.total + ".00₮";
     this.update();
+  }
+
+  hah(title) {
+    const cartContent = document.getElementsByClassName("cart_full")[0];
+    const article = cartContent.getElementsByTagName("article");
+    for (let i = 0; i < article.length; i++) {
+      const articleElement = article[i];
+      const titleElement = articleElement.querySelector(".again");
+      const order_title = titleElement.innerText;
+
+      if (title === order_title) {
+        const addFoodElement = articleElement.querySelector(".add_food");
+        const quantityElement = addFoodElement.querySelector(".value");
+        let quantityValue = parseInt(quantityElement.innerText);
+        quantityValue++;
+        quantityElement.innerHTML = quantityValue;
+        this.update();
+      }
+    }
   }
 }
 window.customElements.define("order-component", Order);

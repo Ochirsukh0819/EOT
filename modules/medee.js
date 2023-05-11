@@ -6,17 +6,18 @@ class News {
     this.date = news.date;
   }
   // render news
-  Render() {  
-    return ` <article class="neg_medee">
-             <picture>
-              <img src="${this.image}" alt="News1">
-                </picture>
-                <section>
-                <h2>${this.title}</h2>
-                <p>${this.content}</p>
-                    <p class="date">${this.date}</p>
-                </section>
-            </article>`;
+  Render() {
+    // return ` <article class="neg_medee">
+    //          <picture>
+    //           <img src="${this.image}" alt="News1">
+    //             </picture>
+    //             <section>
+    //             <h2>${this.title}</h2>
+    //             <p>${this.content}</p>
+    //                 <p class="date">${this.date}</p>
+    //             </section>
+    //         </article>`;
+    return `<ph-about image= ${this.image} title="${this.title}" content="${this.content}" date=${this.date}></ph-about>`;
   }
 }
 
