@@ -270,7 +270,7 @@ footer {
         position: absolute;
         display: none;
         flex-direction: column;
-        border-radius: 0.625rem;
+        border-radius: 10px;
         align-items: center;
         text-align: center;
         z-index: 101;
@@ -335,7 +335,7 @@ footer {
 
 @media only screen and (max-width: 420px) {
     .input1>div {
-        width: 7.5rem;
+        width: 120px;
     }
 
     .input1 {
@@ -347,11 +347,15 @@ footer {
     }
 
     header>a {
-        width: 6.25rem;
+        width: 100px;
     }
 
     .logo>img {
-        width: 80px;
+        width: 100px; 
+        height: 100px;
+    }
+    .header_cart{
+        display: none;
     }
 }
 @media only screen and (max-width: 565px){
@@ -364,7 +368,11 @@ footer {
 }
 
 @media only screen and (max-width: 420px){
-    .header_cart{
-        display: none;
+    .logo > img{
+        height: 100%;
+        width: 50%;
+    }
+    .logo{
+        margin: 0.1rem 0 0.1rem 0;
     }
 }
