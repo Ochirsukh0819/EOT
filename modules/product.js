@@ -24,6 +24,7 @@ class Product {
 export default class Module_Product {
   constructor(json_url) {
     this.json_url = json_url;
+    console.log(this.json_url);
   }
 
   download(element) {
@@ -35,7 +36,9 @@ export default class Module_Product {
 
     fetch(`${this.json_url}`).then((response) => {
       response.json().then((data) => {
-        const filteredProducts = data.record.filter((product) => {
+        console.log("DATAAAA", data);
+        const filteredProducts = data.json_agg.filter((product) => {
+          console.log(product.image);
           return product.category === element;
         });
         products.insertAdjacentHTML(

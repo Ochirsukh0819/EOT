@@ -1,4 +1,5 @@
 class PhLocalStorage extends HTMLElement {
+  
   constructor() {
     super();
 
@@ -23,10 +24,8 @@ class PhLocalStorage extends HTMLElement {
       });
     }
   }
-
-  connectedCallback() {
-    console.log("localstorage******************");
-  }
+  
+  connectedCallback() {}
 
   disconnectedCallback() {}
 
@@ -34,5 +33,4 @@ class PhLocalStorage extends HTMLElement {
 
   adoptedCallback() {}
 }
-
 window.customElements.define("ph-localstorage", PhLocalStorage);

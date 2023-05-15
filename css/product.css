@@ -442,13 +442,6 @@ order-component {
   }
 }
 /*  dark mode */
-
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--background_dark_mode);
-    /* color: var(--color_dark_mode); */
-  }
-}
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--background_dark_mode);
