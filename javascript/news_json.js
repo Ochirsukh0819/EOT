@@ -1,7 +1,7 @@
 import defaultImport from "../modules/medee.js";
 
 const news = new defaultImport(
-  "https://api.jsonbin.io/v3/b/642d96f8ebd26539d0a519d6"
+  "https://api.jsonbin.io/v3/b/64643e68b89b1e22999f3632"
 );
 
 news.download();

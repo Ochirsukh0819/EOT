@@ -117,7 +117,9 @@ class PhManyProduct extends HTMLElement {
       </section> `;
   }
 
-  connectedCallback() {}
+  connectedCallback() {
+    
+  }
 
   disconnectedCallback() {
     //
