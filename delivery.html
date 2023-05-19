@@ -83,7 +83,7 @@
       };
       var map = new google.maps.Map(document.getElementById('map'), options);
 
-      fetch('.json/markers.json')
+      fetch('./json/markers.json')
         .then(response => response.json())
         .then(data => {
           markers = data.markers;
