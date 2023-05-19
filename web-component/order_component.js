@@ -152,10 +152,9 @@ export default class Order extends HTMLElement {
       if (title === order_title) {
         const addFoodElement = articleElement.querySelector(".add_food");
         const quantityElement = addFoodElement.querySelector(".value");
-        let quantityValue = parseInt(quantityElement.innerText);
-        quantityValue++;
-        console.log("Counter: ", quantityValue);
-        quantityElement.innerHTML = quantityValue;
+        this.quantityValue++;
+        console.log("Counter: ", this.quantityValue);
+        quantityElement.innerHTML = this.quantityValue;
         const local_object = {
           prices: this.prices,
           quantityValue: this.quantityValue,
