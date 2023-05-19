@@ -1,6 +1,6 @@
 import a from "../modules/product.js";
 
-const product = new a("http://localhost:3000/");
+const product = new a("http://localhost:3000/api");
 
 const queryParams = new URLSearchParams(window.location.search);
 
