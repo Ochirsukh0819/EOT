@@ -443,10 +443,10 @@ order-component {
 }
 /*  dark mode */
 @media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--background_dark_mode);
-    /* color:var(--color_dark_mode); */
-  }
+  /* ph-cart > .cart {
+    background-color: var(--footer_background);
+  } */
+
 }
 
 @media only screen and (max-device-width: 920px) and (orientation: landscape) and (max-device-height: 500px) {

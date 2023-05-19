@@ -1,6 +1,17 @@
-let cartItems = [];
-
 let distinguish_name = [];
+
+if (localStorage.getItem("key")) {
+  console.log("data bna");
+  const myObject = JSON.parse(localStorage.getItem("key"));
+  console.log("myObjectTitle: ", myObject.title);
+
+  myObject.forEach((item) => {
+    distinguish_name.push(item.title);
+  });
+  console.log(distinguish_name);
+} else {
+  distinguish_name = [];
+}
 
 // product component vvsgeh gj bgaa class
 class Product extends HTMLElement {
@@ -11,7 +22,8 @@ class Product extends HTMLElement {
     const price = this.getAttribute("price");
 
     // Render hiij bgaa heseg damjuulagdaj bui attribute onooj ogj bgaa
-    this.innerHTML = `<article>
+    this.innerHTML = `
+    <article>
       <a href="#">
           <picture>
           <img src="${imgUrl}" alt="Маханд дурлагдсад">
@@ -51,6 +63,9 @@ class Product extends HTMLElement {
           title: this.getAttribute("title"),
           price: this.getAttribute("price"),
         };
+        const dataString = localStorage.getItem("key");
+
+        let cartItems = dataString ? JSON.parse(dataString) : [];
 
         cartItems.push(local_object);
         localStorage.setItem("key", JSON.stringify(cartItems));

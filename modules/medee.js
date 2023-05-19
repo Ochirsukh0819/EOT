@@ -17,7 +17,12 @@ class News {
     //                 <p class="date">${this.date}</p>
     //             </section>
     //         </article>`;
-    return `<ph-about image= ${this.image} title="${this.title}" content="${this.content}" date=${this.date}></ph-about>`;
+    return `<ph-about mode = "mode1">
+            <img slot="image" src="${this.image}" alt="News1" class="sad">
+            <h2 slot="title">${this.title}</h2>
+            <p slot="content">${this.content}</p>
+            <p slot="date">${this.date}</p>
+           </ph-about>`;
   }
 }
 

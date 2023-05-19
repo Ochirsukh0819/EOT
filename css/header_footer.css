@@ -345,3 +345,14 @@ footer {
     padding: 0.5rem 0.5rem;
   }
 }
+
+/* @media (prefers-color-scheme: dark) {
+  header {
+    background-color: var(--footer_background);
+    color: #fff;
+  }
+
+  .head_menu ul li a {
+    color: #fff;
+  }
+} */

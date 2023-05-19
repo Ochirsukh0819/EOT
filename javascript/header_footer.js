@@ -1,6 +1,7 @@
 class Header extends HTMLElement {
   constructor() {
     super();
+    this.cart = localStorage.getItem("cart_counter") || 0;
 
     this.innerHTML = `<header>
     <a href="index.html">
@@ -24,7 +25,7 @@ class Header extends HTMLElement {
     </ul>
 
     <section class="header_cart">
-      <div id="circle"><p id="add">0</p></div>
+      <div id="circle"><p id="add">${this.cart}</p></div>
       <i
         class="fa-solid fa-cart-shopping"
         id="cart"
