@@ -110,13 +110,12 @@ body {
   grid-template-rows: 18rem 18rem;
 }
 
-/* 
-#medeenvvd  > .neg_medee {
+#medeenvvd > .neg_medee {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
+/*
 #medeenvvd  > .neg_medee > picture img {
   width: 15rem;
   height: auto;
@@ -310,5 +309,14 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  #medeenvvd > .neg_medee {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--red);
   }
 }

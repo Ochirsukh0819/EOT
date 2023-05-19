@@ -9,7 +9,6 @@ export default class Order extends HTMLElement {
     this.prices =
       JSON.parse(localStorage.getItem(this.value))?.prices ||
       this.getAttribute("price");
-    console.log(">>>>>>>>>>>>>>>>>>>....", this.prices);
     this.quantityValue =
       JSON.parse(localStorage.getItem(this.value))?.quantityValue || 1;
     this.priceValue = this.getAttribute("price");
@@ -102,7 +101,7 @@ export default class Order extends HTMLElement {
       const price = parseFloat(priceElement.innerText.replace("$", ""));
       this.total = this.total - price;
       document.getElementById("total_price").innerHTML = this.total + ".00₮";
-      localStorage.clear();
+      // localStorage.clear();
       if (cart_full.childElementCount === 0) {
         cart_empty.style.display = "flex";
         document.getElementById("total_price").innerHTML = 0 + ".00₮";
@@ -152,9 +151,11 @@ export default class Order extends HTMLElement {
       if (title === order_title) {
         const addFoodElement = articleElement.querySelector(".add_food");
         const quantityElement = addFoodElement.querySelector(".value");
-        this.quantityValue++;
-        console.log("Counter: ", this.quantityValue);
-        quantityElement.innerHTML = this.quantityValue;
+        let quantityValue = parseInt(quantityElement.innerText);
+        quantityValue++;
+        console.log("Counter: ", quantityValue);
+        quantityElement.innerHTML = quantityValue;
+        this.quantityValue = quantityValue;
         const local_object = {
           prices: this.prices,
           quantityValue: this.quantityValue,
