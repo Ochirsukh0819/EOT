@@ -1,6 +1,6 @@
 import a from "../modules/product.js";
 
-const product = new a("https://api.jsonbin.io/v3/b/64526e169d312622a356b3ac");
+const product = new a("http://localhost:3000/");
 
 const queryParams = new URLSearchParams(window.location.search);
 

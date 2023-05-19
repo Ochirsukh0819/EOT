@@ -35,7 +35,7 @@ export default class Module_Product {
 
     fetch(`${this.json_url}`).then((response) => {
       response.json().then((data) => {
-        const filteredProducts = data.record.filter((product) => {
+        const filteredProducts = data.json_agg.filter((product) => {
           return product.category === element;
         });
         products.insertAdjacentHTML(

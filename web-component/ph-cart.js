@@ -101,8 +101,6 @@ class PhCart extends HTMLElement {
   }
 
   connectedCallback() {
-    //
-    console.log(this.children[0].children[2]);
     this.children[0].children[2].insertAdjacentHTML(
       "afterend",
       `<ph-localstorage></ph-localstorage>`
