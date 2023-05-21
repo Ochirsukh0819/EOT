@@ -84,7 +84,7 @@ class PhAbout extends HTMLElement {
         }
         
           .neg_medee > picture  > sad{
-          background-color: red;
+          background-color: var(--objective_bg);
           width: 15rem;
           height: auto;
           aspect-ratio: initial;

@@ -63,19 +63,19 @@ main {
   margin-left: 3rem;
 }
 
-#food > product-component > article {
+#food > ph-one_product > article {
   display: flex;
   flex-direction: column;
   background-color: var(--white_color);
   border-radius: 0.625rem;
 }
 
-#food > product-component > article > a > picture > img {
+#food > ph-one_product > article > a > picture > img {
   width: 18.75rem;
   border-radius: 0.625rem;
 }
 
-#food > product-component > article > h3 {
+#food > ph-one_product > article > h3 {
   width: 60%;
   line-height: 1.2;
   margin: 0.675rem auto auto 1rem;
@@ -84,7 +84,7 @@ main {
   font-size: var(--product_font_size);
 }
 
-#food > product-component > article > p {
+#food > ph-one_product > article > p {
   display: flex;
   justify-content: end;
   margin: 0.3rem 1rem 0 0;
@@ -92,7 +92,7 @@ main {
   font-family: var(--product_fonts);
 }
 
-#food > product-component > article > button {
+#food > ph-one_product > article > button {
   margin: 1.5rem 4rem 1rem 4rem;
   background-color: #ffd3a6;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -102,7 +102,7 @@ main {
   cursor: pointer;
 }
 
-#food > product-component > article > button:hover {
+#food > ph-one_product > article > button:hover {
   background-color: var(--main_color);
   color: var(--white_color);
 }
@@ -111,12 +111,12 @@ main {
   cursor: pointer;
 }
 
-ph-cart {
+ph-cart_container {
   display: block;
   width: 25%;
 }
 
-ph-cart > .cart {
+ph-cart_container > .cart {
   width: 100%;
   margin-top: 2rem;
   background-color: var(--white_color);
@@ -145,7 +145,7 @@ ph-cart > .cart {
   /* justify-content: center; */
   align-items: center;
 }
-.cart > .cart_full > order-component > article {
+.cart > .cart_full > ph-one_cart > article {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
@@ -155,12 +155,12 @@ ph-cart > .cart {
   box-shadow: 0 0 0.313rem 0.313rem #f4f4f4;
 }
 
-order-component {
+ph-one_cart {
   display: block;
   width: 70%;
 }
 
-.cart > .cart_full > order-component > article {
+.cart > .cart_full > ph-one_cart > article {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
@@ -170,13 +170,13 @@ order-component {
   box-shadow: 0 0 5px 5px #f4f4f4;
 }
 
-.cart > .cart_full > order-component > article h2 {
+.cart > .cart_full > ph-one_cart > article h2 {
   width: 100%;
   font-size: 1.2rem;
   margin: 1rem 1rem 1rem 1.5rem;
   font-style: var(--header_footer_font_family);
 }
-.cart > .cart_full > order-component > article > .part1 > select {
+.cart > .cart_full > ph-one_cart > article > .part1 > select {
   padding: 0.25rem 0.25rem 0.25rem 0.25rem;
   border-style: none;
   border-radius: 0.625rem;
@@ -184,12 +184,12 @@ order-component {
   box-shadow: 0.125rem 0.125rem #f4f4f4;
 }
 
-.cart > .cart_full > order-component > article > .part1 {
+.cart > .cart_full > ph-one_cart > article > .part1 {
   display: flex;
   justify-content: space-between;
 }
 
-.cart > .cart_full > order-component > article > .part1 > select {
+.cart > .cart_full > ph-one_cart > article > .part1 > select {
   padding: 0.25rem 0.25rem 0.25rem 0.25rem;
   border-style: none;
   border-radius: 10px;
@@ -197,27 +197,27 @@ order-component {
   box-shadow: 2px 2px #f4f4f4;
 }
 
-.cart > .cart_full > order-component > article > .part2 {
+.cart > .cart_full > ph-one_cart > article > .part2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.cart > .cart_full > order-component > article > .part2 > .add_food > button {
+.cart > .cart_full > ph-one_cart > article > .part2 > .add_food > button {
   padding: 0.188rem;
 }
 
-.cart > .cart_full > order-component > article > .part2 > .add_food {
+.cart > .cart_full > ph-one_cart > article > .part2 > .add_food {
   display: flex;
   flex-direction: row;
   gap: 0.625rem;
   margin: 1rem;
 }
 
-.cart > .cart_full > order-component > article > .part2 > .add_food > button {
+.cart > .cart_full > ph-one_cart > article > .part2 > .add_food > button {
   padding: 3px;
 }
 
-.cart > .cart_full > order-component > article > .part2 > p {
+.cart > .cart_full > ph-one_cart > article > .part2 > p {
   margin: 1rem;
   font-weight: bold;
 }
@@ -391,10 +391,10 @@ order-component {
 }
 
 @media only screen and (max-width: 85.125rem) {
-  ph-cart {
+  ph-cart_container {
     display: none;
   }
-  ph-cart > .cart {
+  ph-cart_container > .cart {
     display: none;
   }
   .product_page {
@@ -446,7 +446,6 @@ order-component {
   /* ph-cart > .cart {
     background-color: var(--footer_background);
   } */
-
 }
 
 @media only screen and (max-device-width: 920px) and (orientation: landscape) and (max-device-height: 500px) {

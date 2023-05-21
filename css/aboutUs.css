@@ -313,10 +313,11 @@ body {
 }
 
 @media (prefers-color-scheme: dark) {
-  #medeenvvd > .neg_medee {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: var(--red);
+  :root {
+    --background-color: var(--objective_bgB);
+  }
+
+  .neg_medee > picture > sad {
+    background-color: var(--background-color);
   }
 }
