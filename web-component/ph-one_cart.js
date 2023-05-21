@@ -1,10 +1,7 @@
 export default class Order extends HTMLElement {
   constructor() {
-    // const name = this.getAttribute("title1");
-    // const price = this.getAttribute("price1");
     super();
     this.total = 0;
-
     this.value = this.getAttribute("title");
     this.prices =
       JSON.parse(localStorage.getItem(this.value))?.prices ||
@@ -38,9 +35,7 @@ export default class Order extends HTMLElement {
   }
 
   connectedCallback() {
-    const close = document.getElementsByClassName("close");
-
-    // add button
+    // add button sagsand orson bvteegdehvvnii too hemjeeg nemeh
     this.children[0].children[2].children[0].children[0].addEventListener(
       "click",
       () => {
@@ -63,7 +58,7 @@ export default class Order extends HTMLElement {
       }
     );
 
-    //sub button
+    //sub button sagsand orson bvteegdehvvnii too hemjeeg hasah
     this.children[0].children[2].children[0].children[2].addEventListener(
       "click",
       () => {
@@ -91,8 +86,7 @@ export default class Order extends HTMLElement {
       }
     );
 
-    // delete button
-
+    // delete button  sagsand bgaa bvtegdehvvniig ustgah
     this.children[0].children[1].children[1].addEventListener("click", () => {
       this.remove();
       const priceElement = this.getElementsByClassName("price_atr")[0];
@@ -110,11 +104,6 @@ export default class Order extends HTMLElement {
       this.update();
     });
 
-    // for (let item of close) {
-    //   item.addEventListener("click", () => {
-    //     this.close_button(item);
-    //   });
-    // }
     this.update();
   }
 
@@ -134,13 +123,19 @@ export default class Order extends HTMLElement {
       let quantityValue = parseInt(quantityElement.innerText);
       this.cart_count += quantityValue;
       this.total = this.total + price;
-      document.getElementById("total_price").innerHTML = this.total + ".00₮";
+      const event = new CustomEvent("totalPrice", {
+        detail: {
+          total: this.total,
+        },
+      });
+      document.dispatchEvent(event);
       document.getElementById("add").innerHTML = `${this.cart_count}`;
       localStorage.setItem("cart_counter", this.cart_count);
     }
   }
 
-  hah(title) {
+  // orj irj bgaa dawhtsaj bnu esehiig shalgah
+  checkOverlap(title) {
     const cartContent = document.getElementsByClassName("cart_full")[0];
     const article = cartContent.getElementsByTagName("article");
     for (let i = 0; i < article.length; i++) {
@@ -166,4 +161,4 @@ export default class Order extends HTMLElement {
     }
   }
 }
-window.customElements.define("order-component", Order);
+window.customElements.define("ph-one_cart", Order);
