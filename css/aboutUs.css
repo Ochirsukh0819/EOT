@@ -312,12 +312,9 @@ body {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: var(--objective_bgB);
+    --about_bgcolor: #848884;
+    --about_text_color: white;
   }
-
-  .neg_medee > picture > sad {
-    background-color: var(--background-color);
-  }
-}
+} */

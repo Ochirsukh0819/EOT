@@ -151,6 +151,7 @@ export default class Order extends HTMLElement {
         console.log("Counter: ", quantityValue);
         quantityElement.innerHTML = quantityValue;
         this.quantityValue = quantityValue;
+
         const local_object = {
           prices: this.prices,
           quantityValue: this.quantityValue,
@@ -159,6 +160,18 @@ export default class Order extends HTMLElement {
         this.update();
       }
     }
+  }
+
+  attributeChangedCallback(name, oldVal, newVal) {
+    if (name === "title") {
+      this.querySelector("h2").innerHTML = newVal;
+    }
+    // if (name === "price") {
+    //   this.querySelector(".price_atr").innerHTML = newVal;
+    // }
+  }
+  static get observedAttributes() {
+    return ["title"];
   }
 }
 window.customElements.define("ph-one_cart", Order);
