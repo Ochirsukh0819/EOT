@@ -16,7 +16,7 @@ if (localStorage.getItem("key")) {
 class PhCartContainer extends HTMLElement {
   constructor() {
     super();
-
+    
     this.innerHTML = ` <aside class="cart" id="Sagsnii_heseg">
     <section class="caption">
       <h2>Таны сагс</h2>
