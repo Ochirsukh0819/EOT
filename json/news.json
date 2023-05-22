@@ -1,24 +1,72 @@
 [
   {
-    "image" : "./aboutUs_image/news1.png",
+    "image" : "./aboutUs_image/news1.webp",
     "title" : "Бяслаган пицца худалдаанд гарлаа",
     "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam ",
     "date" : "2020.03.11"
   },
   {
-    "image" : "./aboutUs_image/news2.png",
+    "image" : "./aboutUs_image/news2.webp",
     "title" : "Тахианы махан пицца худалдаанд гарлаа",
     "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam ",
     "date" : "2020.03.11"
   },
   {
-    "image" : "./aboutUs_image/news3.png",
+    "image" : "./aboutUs_image/news3.webp",
     "title" : "Pizza making day хөтөлбөр зохион байгуулагдлаа",
     "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam ",
     "date" : "2020.03.11"
   },
   {
-    "image" : "./aboutUs_image/news4.png",
+    "image" : "./aboutUs_image/news4.webp",
+    "title" : "Pizza hut зурхай",
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam ",
+    "date" : "2020.03.11"
+  },
+  {
+    "image" : "./aboutUs_image/news4.webp",
+    "title" : "Бяслаган пицца худалдаанд гарлаа",
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam ",
+    "date" : "2020.03.11"
+  },
+  {
+    "image" : "./aboutUs_image/news3.webp",
+    "title" : "Тахианы махан пицца худалдаанд гарлаа",
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam ",
+    "date" : "2020.03.11"
+  },
+  {
+    "image" : "./aboutUs_image/news2.webp",
+    "title" : "Pizza making day хөтөлбөр зохион байгуулагдлаа",
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam ",
+    "date" : "2020.03.11"
+  },
+  {
+    "image" : "./aboutUs_image/news1.webp",
+    "title" : "Pizza hut зурхай",
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam ",
+    "date" : "2020.03.11"
+  },
+  {
+    "image" : "./aboutUs_image/news1.webp",
+    "title" : "Бяслаган пицца худалдаанд гарлаа",
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam ",
+    "date" : "2020.03.11"
+  },
+  {
+    "image" : "./aboutUs_image/news4.webp",
+    "title" : "Тахианы махан пицца худалдаанд гарлаа",
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam ",
+    "date" : "2020.03.11"
+  },
+  {
+    "image" : "./aboutUs_image/news2.webp",
+    "title" : "Pizza making day хөтөлбөр зохион байгуулагдлаа",
+    "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam ",
+    "date" : "2020.03.11"
+  },
+  {
+    "image" : "./aboutUs_image/news3.webp",
     "title" : "Pizza hut зурхай",
     "content" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullam ",
     "date" : "2020.03.11"

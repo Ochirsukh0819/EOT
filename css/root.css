@@ -8,6 +8,8 @@
   --main_width: 100%;
   --main_height: 100%;
   --main_bg_color: #D9D9D9;
+  --background_dark_mode: #f4e9e0; 
+  --color_dark_mode: #fff;
 
   /*header part */
   --header_background: #FFFFFF;

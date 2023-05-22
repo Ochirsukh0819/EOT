@@ -1,639 +1,736 @@
-@import url('root.css');
+@import url("root.css");
 
 /*Body heseg*/
 body {
-	background-color: #f4e9e0;
-	background-image: radial-gradient(#f6a24a 2px, transparent 2px), radial-gradient(#f6a24a 2px, #f4e9e0 2px);
-	background-size: 80px 80px;
-	background-position: 0 0, 40px 40px;
-	background-attachment: fixed;
-	opacity: 1;
-	text-align: left;
-	overflow-x: hidden;
+  background-color: #f4e9e0;
+  background-image: radial-gradient(#f6a24a 2px, transparent 2px),
+    radial-gradient(#f6a24a 2px, #f4e9e0 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
+  background-attachment: fixed;
+  opacity: 1;
+  text-align: left;
+  overflow-x: hidden;
 }
 
+h6{
+	display: none;
+}
 .container {
-	margin-bottom: 5%;
-	display: grid;
-	grid-template-rows: auto auto;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-	font-size: 110%;
-	justify-items: center;
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  font-size: 110%;
+  justify-items: center;
 }
 
 /*Deed taliin processiig aguulagch heseg*/
 .process {
-	max-width: 27%;
-	max-height: 15%;
-	width: 100%;
-	margin: 5% auto 5% auto;
-	display: block;
-	align-items: var(--align_items);
-	flex-direction: column;
-	grid-column: 1 / 4;
-	grid-row: 1;
+  max-width: 27%;
+  max-height: 15%;
+  width: 100%;
+  margin: 5% auto 5% auto;
+  display: block;
+  align-items: var(--align_items);
+  flex-direction: column;
+  grid-column: 1 / 4;
+  grid-row: 1;
 }
 
 /*3 steps iig aguulj bui heseg*/
 .process .steps {
-	width: 100%;
-	position: relative;
-	display: flex;
-	align-items: var(--align_items);
-	justify-content: space-between;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: var(--align_items);
+  justify-content: space-between;
 }
 
 /*Hurgeltiin zurag*/
-.steps>#Ehnii_version {
-	width: 20%;
-	bottom: 0.3rem;
-	left: 10%;
-	position: absolute;
+.steps > #Ehnii_version {
+  width: 20%;
+  bottom: 0.3rem;
+  left: 10%;
+  position: absolute;
 }
 
 /*Jiriin uye iin processiin circle*/
 .steps .circle {
-	background: var(--process_background);
-	padding: 2.5% 4%;
-	display: flex;
-	border-radius: 50%;
-	color: #EE3A43;
-	align-items: var(--align_items);
-	justify-content: center;
+  background: var(--process_background);
+  padding: 2.5% 4%;
+  display: flex;
+  border-radius: 50%;
+  color: #ee3a43;
+  align-items: var(--align_items);
+  justify-content: center;
 }
 
 /*Activated circle*/
 .steps .circle.active {
-	color: #FFFFFF;
+  color: #ffffff;
 }
 
 /*Processiig holbogch*/
 .steps .progress-bar {
-	width: 100%;
-	height: 0.25rem;
-	background: #000000;
-	position: absolute;
-	z-index: -1;
+  width: 100%;
+  height: 0.25rem;
+  background: #000000;
+  position: absolute;
+  z-index: -1;
 }
 
 /*3 columniin heseg*/
 #Sagsnii_heseg,
 #Hurgeltiin_heseg,
 .Tulburiin_heseg {
-	width: 85%;
-	height: 103%;
-	background-color: #FFFFFF;
-	padding: 2.75rem 10%;
-	border-radius: var(--border_radius);
-	grid-row: 2;
-}
-
-
-#Sagsnii_heseg {
-	justify-content: center;
-	opacity: 1;
+  width: 85%;
+  height: 103%;
+  background-color: #ffffff;
+  padding: 2.75rem 10%;
+  border-radius: var(--border_radius);
+  grid-row: 2;
 }
 
 #Hurgeltiin_heseg,
+#Sagsnii_heseg {
+  justify-content: center;
+  opacity: 1;
+}
+
+
 .Tulburiin_heseg {
-	opacity: 0.7;
+  opacity: 0.7;
 }
 
 /*buh garchiguud*/
 h2 {
-	text-align: center;
-	margin: 1.375rem 0;
+  text-align: center;
+  margin: 1.375rem 0;
 }
 
 /*Garchig doorh medeelel*/
-.Tulburiin_heseg>section>p,
-.Hurgeltiin_medeelel>p,
-.Sagsnii_medeelel>p {
-	margin: 1.125rem 0 1.875rem 0;
-	text-align: left;
+.Tulburiin_heseg > section > p,
+.Hurgeltiin_medeelel > p,
+.Sagsnii_medeelel > p {
+  margin: 1.125rem 0 1.875rem 0;
+  text-align: left;
 }
 
 /*Garchig doorh zuraas*/
 .Tulburiin_doorh_line,
 .Hurgeltiin_doorh_line,
 .Sagsnii_doorh_line {
-	height: 1px;
-	background: black;
-	margin-left: auto;
-	margin-right: auto;
-	display: block;
-	margin-top: 21px;
+  height: 1px;
+  background: black;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 21px;
 }
 
 .Tulburiin_doorh_line {
-	width: 80%;
+  width: 80%;
 }
 
 .Hurgeltiin_doorh_line {
-	width: 70%;
+  width: 70%;
 }
 
 .Sagsnii_doorh_line {
-	width: 30%;
+  width: 30%;
 }
 
 /*Hurgeltiin hesgiin section*/
-.Hurgeltiin_ner_hayg>form {
-	display: grid;
-	grid-template-rows: auto auto auto auto auto auto auto auto;
-	grid-template-columns: auto;
-	row-gap: 3%;
+.Hurgeltiin_ner_hayg > form {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  grid-template-columns: auto;
+  row-gap: 3%;
 }
 
 /*Hurgeltiin tovch*/
 .Hurgeltiin_tovch {
-	display: grid;
-	grid-template-columns: auto auto;
-	justify-items: center;
-	align-content: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  align-content: center;
 }
 
 /*Burtgeliin 2 bagana*/
 .Burtgel {
-	grid-template-columns: auto auto;
+  grid-template-columns: auto auto;
 }
 
 /*Burtgeliin labeluud*/
-.Burtgel>label {
-	margin-right: 15%;
-	grid-column: 1;
+.Burtgel > label {
+  margin-right: 15%;
+  grid-column: 1;
 }
 
 /*Huviin medeelel.Ner hayg geh met*/
-.Hurgeltiin_ner_hayg>form>section>label {
-	width: 3.438rem;
-	height: 1.25rem;
-	display: inline-block;
+.Hurgeltiin_ner_hayg > form > section > label {
+  width: 3.438rem;
+  height: 1.25rem;
+  display: inline-block;
 }
 
 /*Ner utas zergiin input*/
-.Hurgeltiin_ner_hayg>form>section>input {
-	width: 55%;
-	background-color: var(--white_color);
-	padding: 2%;
-	border: 1px solid #000000;
-	border-radius: var(--border_radius);
-	grid-column: 2;
+.Hurgeltiin_ner_hayg > form > section > input {
+  width: 55%;
+  background-color: var(--white_color);
+  padding: 2%;
+  border: 1px solid #000000;
+  border-radius: var(--border_radius);
+  grid-column: 2;
 }
 
 /*Duureg, horoogiin input*/
-.Hurgeltiin_ner_hayg>form>section>#Duureg_id,
-.Hurgeltiin_ner_hayg>form>section>#Horoo_id {
-	width: 55%;
-	background-color: var(--white_color);
-	padding: 2%;
-	border: 1px solid #000000;
-	border-radius: var(--border_radius);
+.Hurgeltiin_ner_hayg > form > section > #Duureg_id,
+.Hurgeltiin_ner_hayg > form > section > #Horoo_id {
+  width: 55%;
+  background-color: var(--white_color);
+  padding: 2%;
+  border: 1px solid #000000;
+  border-radius: var(--border_radius);
 }
 
 .Tulbur {
-	padding-top: 10%;
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: auto auto;
-	row-gap: 5%;
+  padding-top: 10%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  row-gap: 5%;
 }
 
-.Tulbur>.Zurag {
-	display: grid;
-	grid-template-rows: auto auto auto;
-	row-gap: 5%;
-	justify-items: center;
-	align-content: center;
-	grid-row: 1;
+.Tulbur > .Zurag {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 5%;
+  justify-items: center;
+  align-content: center;
+  grid-row: 1;
 }
 
 /*Qpay heseg*/
-.Tulbur>.Zurag>a>#Qpay {
-	width: 7.688rem;
-	height: 7.688rem;
+.Tulbur > .Zurag > a > #Qpay {
+  width: 7.688rem;
+  height: 7.688rem;
 }
 
 /*Applepay heseg*/
-.Tulbur>.Zurag>a>#ApplePay {
-	width: 13.75rem;
-	height: 8.125rem;
+.Tulbur > .Zurag > a > #ApplePay {
+  width: 13.75rem;
+  height: 8.125rem;
 }
 
 /*Creditcard heseg*/
-.Tulbur>.Zurag>a>#CreditCard {
-	width: 9rem;
-	height: 6.313rem;
+.Tulbur > .Zurag > a > #CreditCard {
+  width: 9rem;
+  height: 6.313rem;
 }
 
 /*Niit uniin  dun*/
-.Tulburiin_heseg>.Tulbur>.Niit_une {
-	padding-top: 5%;
-	display: grid;
-	grid-template-columns: auto auto;
-	grid-template-rows: auto auto;
-	row-gap: 12%;
-	text-align: left;
-	grid-row: 2;
+.Tulburiin_heseg > .Tulbur > .Niit_une {
+  padding-top: 5%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  row-gap: 12%;
+  text-align: left;
+  grid-row: 2;
 }
 
 /*Niit uniin  dun hesgiin niit*/
-.Tulburiin_heseg>.Tulbur>.Niit_une>p:nth-child(1) {
-	grid-column: 1;
-	margin: 1.1rem 0;
+.Tulburiin_heseg > .Tulbur > .Niit_une > p:nth-child(1) {
+  grid-column: 1;
+  margin: 1.1rem 0;
 }
 
 /*Niit uniin  dun hegiin une*/
-.Tulburiin_heseg>.Tulbur>.Niit_une>p:nth-child(2) {
-	grid-column: 2;
-	text-align: right;
-	margin: 1.1rem 0;
+.Tulburiin_heseg > .Tulbur > .Niit_une > p:nth-child(2) {
+  grid-column: 2;
+  text-align: right;
+  margin: 1.1rem 0;
 }
 
 /*Tulbut tuluh hesgiin tovch*/
-.Niit_une>button {
-	grid-row: 2;
-	grid-column: 1 /3;
-	padding: 4% 10%;
+.Niit_une > button {
+  grid-row: 2;
+  grid-column: 1 /3;
+  padding: 4% 10%;
 }
 
 /*buh tovchnii zagvar*/
-.Niit_une>button,
-.Hurgeltiin_ner_hayg>form>section>button {
-	background-color: var(--white_color);
-	border: 1px solid #000000;
-	border-radius: var(--border_radius);
-	cursor: pointer;
-	color: var(--black-color);
+.Niit_une > button,
+.Hurgeltiin_ner_hayg > form > section > button {
+  background-color: var(--white_color);
+  border: 1px solid #000000;
+  border-radius: var(--border_radius);
+  cursor: pointer;
+  color: var(--black-color);
 }
 
 /*Niit uniin tovch*/
-.Niit_une>button,
-.Sagsnii_dotorh>.Sags_zahialga>.Sagsnii_tovch>button {
-	margin: 0 auto 0 auto;
-	display: block;
+.Niit_une > button,
+.Sagsnii_dotorh > .Sags_zahialga > .Sagsnii_tovch > button {
+  margin: 0 auto 0 auto;
+  display: block;
 }
 
-
 /*Hurgeltiin butsah tovch*/
-.Hurgeltiin_ner_hayg>form>.Hurgeltiin_tovch>#Butsah_button {
-	margin-top: 1.25rem;
-	padding: 8% 15%;
-
+.Hurgeltiin_ner_hayg > form > .Hurgeltiin_tovch > #Butsah_button {
+  margin-top: 1.25rem;
+  padding: 8% 15%;
 }
 
 /*Hurgeltiin urgeljluuleh tovch*/
-.Hurgeltiin_ner_hayg>form>.Hurgeltiin_tovch>#Urgeljluuleh_button {
-	margin-top: 1.25rem;
-	padding: 4% 15%;
+.Hurgeltiin_ner_hayg > form > .Hurgeltiin_tovch > #Urgeljluuleh_button {
+  margin-top: 1.25rem;
+  padding: 4% 15%;
 }
 
 /*Zahialgiin heseg*/
-.Sagsnii_dotorh>.Sags_zahialga {
-	display: grid;
-	grid-template-columns: auto;
-	gap: 3rem;
+.Sagsnii_dotorh > .Sags_zahialga {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 3rem;
 }
 
 /*Buteegdehuun1*/
-.Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun {
-	background-color: var(--white_color);
-	padding: 1.063rem 0.5rem 0 2.063rem;
-	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-template-rows: auto auto auto;
-	border-radius: var(--border_radius);
-	border: 1px solid #000000;
-
+.Sagsnii_dotorh > .Sags_zahialga > .Buteegdehuun {
+  background-color: var(--white_color);
+  padding: 1.063rem 0.5rem 0 2.063rem;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  border-radius: var(--border_radius);
+  border: 1px solid #000000;
 }
 
 /*Buteegdehuun1 iin garchig*/
-.Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Garchig {
-	grid-row: 1;
-	grid-column: 1 /3;
-	margin: 1.1rem 0;
+.Sagsnii_dotorh > .Sags_zahialga > .Buteegdehuun > .Garchig {
+  grid-row: 1;
+  grid-column: 1 /3;
+  margin: 1.1rem 0;
 }
 
 /*Buteegdehuun1 songolt*/
-.Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Songolt {
-	width: 100%;
-	background-color: var(--white_color);
-	padding: 2%;
-	grid-row: 2;
-	grid-column: 1;
-	border: 1px solid #000000;
-	border-radius: 0.9rem;
+.Sagsnii_dotorh > .Sags_zahialga > .Buteegdehuun > .Songolt {
+  width: 100%;
+  background-color: var(--white_color);
+  padding: 2%;
+  grid-row: 2;
+  grid-column: 1;
+  border: 1px solid #000000;
+  border-radius: 0.9rem;
 }
 
 /*Buteegdehuun1 ustgah tovch*/
-.Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Ustgah {
-	width: 1.75rem;
-	height: 1.75rem;
-	background-color: var(--white_color);
-	margin: auto auto;
-	display: block;
-	grid-column: 3;
-	grid-row: 2;
-	border-radius: 50%;
-	border: 1px solid #CEB79B;
-	cursor: pointer;
-	color: #CEB79B;
+.Sagsnii_dotorh > .Sags_zahialga > .Buteegdehuun > .Ustgah {
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: var(--white_color);
+  margin: auto auto;
+  display: block;
+  grid-column: 3;
+  grid-row: 2;
+  border-radius: 50%;
+  border: 1px solid #ceb79b;
+  cursor: pointer;
+  color: #ceb79b;
 }
 
 /*Buteegdehuun1 hool nemeh heseg*/
-.Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Hool_nemeh {
-	width: 20%;
-	grid-row: 3;
-	grid-column: 1;
-	display: grid;
-	grid-template-columns: auto auto auto;
+.Sagsnii_dotorh > .Sags_zahialga > .Buteegdehuun > .Hool_nemeh {
+  width: 20%;
+  grid-row: 3;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
 /*Buteegdehuun1 hool nemeh hasah tovch*/
-.Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Hool_nemeh>.Nemeh,
-.Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Hool_nemeh>.Hasah {
-	width: 1.75rem;
-	height: 1.75rem;
-	background-color: var(--white_color);
-	margin-top: 0.867rem;
-	border-radius: 0.5rem;
-	border: 1px solid #000000;
-	cursor: pointer;
+.Sagsnii_dotorh > .Sags_zahialga > .Buteegdehuun > .Hool_nemeh > .Nemeh,
+.Sagsnii_dotorh > .Sags_zahialga > .Buteegdehuun > .Hool_nemeh > .Hasah {
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: var(--white_color);
+  margin-top: 0.867rem;
+  border-radius: 0.5rem;
+  border: 1px solid #000000;
+  cursor: pointer;
 }
 
-.Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Hool_nemeh>.Nemeh {
-	grid-column: 1;
+.Sagsnii_dotorh > .Sags_zahialga > .Buteegdehuun > .Hool_nemeh > .Nemeh {
+  grid-column: 1;
 }
 
-.Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Hool_nemeh>p {
-	width: 1.75rem;
-	height: 1.75rem;
-	grid-column: 2;
-	text-align: center;
-	margin: 1.1rem 0;
+.Sagsnii_dotorh > .Sags_zahialga > .Buteegdehuun > .Hool_nemeh > p {
+  width: 1.75rem;
+  height: 1.75rem;
+  grid-column: 2;
+  text-align: center;
+  margin: 1.1rem 0;
 }
 
-.Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Hool_nemeh>.Hasah {
-	grid-column: 3;
+.Sagsnii_dotorh > .Sags_zahialga > .Buteegdehuun > .Hool_nemeh > .Hasah {
+  grid-column: 3;
 }
 
 /*Buteegdehuun1 hoolnii uniin heseg*/
-.Sagsnii_dotorh>.Sags_zahialga>.Buteegdehuun>.Une {
-	grid-row: 3;
-	grid-column: 2;
-	text-align: left;
-	margin: 1.1rem 10px;
+.Sagsnii_dotorh > .Sags_zahialga > .Buteegdehuun > .Une {
+  grid-row: 3;
+  grid-column: 2;
+  text-align: left;
+  margin: 1.1rem 10px;
 }
 
 /*Sagsnii niit une+tovch*/
-.Sagsnii_dotorh>.Sags_zahialga>.Sagsnii_tovch {
-	display: grid;
-	grid-template-columns: auto auto;
-	grid-template-rows: auto auto;
-	row-gap: 50%;
+.Sagsnii_dotorh > .Sags_zahialga > .Sagsnii_tovch {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  row-gap: 50%;
 }
 
 /*Sagsnii niit une*/
-.Sagsnii_dotorh>.Sags_zahialga>.Sagsnii_tovch>p:nth-child(1) {
-	grid-column: 1;
+.Sagsnii_dotorh > .Sags_zahialga > .Sagsnii_tovch > p:nth-child(1) {
+  grid-column: 1;
 }
 
 /*Sagsnii une*/
-.Sagsnii_dotorh>.Sags_zahialga>.Sagsnii_tovch>p:nth-child(2) {
-	grid-column: 2;
-	text-align: right;
+.Sagsnii_dotorh > .Sags_zahialga > .Sagsnii_tovch > p:nth-child(2) {
+  grid-column: 2;
+  text-align: right;
 }
 
 /*Sagsnii tovch*/
-.Sagsnii_dotorh>.Sags_zahialga>.Sagsnii_tovch>button {
-	background-color: var(--process_background);
-	padding: 4% 7%;
-	grid-row: 2;
-	grid-column: 1 /3;
-	border: 1px solid #EE3A43;
-	border-radius: var(--border_radius);
-	cursor: pointer;
-	color: var(--white_color);
+.Sagsnii_dotorh > .Sags_zahialga > .Sagsnii_tovch > button {
+  background-color: var(--process_background);
+  padding: 4% 7%;
+  grid-row: 2;
+  grid-column: 1 /3;
+  border: 1px solid #ee3a43;
+  border-radius: var(--border_radius);
+  cursor: pointer;
+  color: var(--white_color);
+}
+
+/* GG */
+
+.Sagsnii_heseg > .full_cart {
+  height: 30rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+order-component {
+  display: block;
+  width: 90%;
+}
+
+.Sagsnii_heseg > .full_cart > order-component > article {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  background-color: var(--white_color);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 5px 5px #f4f4f4;
+}
+
+.Sagsnii_heseg > .full_cart > order-component > article h2 {
+  width: 40%;
+  font-size: 1.2rem;
+  margin: 1rem 1rem 1rem 1.5rem;
+  font-style: var(--header_footer_font_family);
+}
+
+.Sagsnii_heseg > .full_cart > order-component > article > .part1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Sagsnii_heseg > .full_cart > order-component > article > .part1 > select {
+  padding: 0.25rem 0.25rem 0.25rem 0.25rem;
+  border-style: none;
+  border-radius: 10px;
+  margin-left: 1rem;
+  box-shadow: 2px 2px #f4f4f4;
+}
+
+.Sagsnii_heseg > .full_cart > order-component > article > .part2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Sagsnii_heseg > .full_cart > order-component > article > .part2 > .add_food {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  margin: 1rem;
+}
+
+.Sagsnii_heseg
+  > .full_cart
+  > order-component
+  > article
+  > .part2
+  > .add_food
+  > button {
+  padding: 3px;
+}
+
+.Sagsnii_heseg > .full_cart > order-component > article > .part2 > p {
+  margin: 1rem;
+  font-weight: bold;
+}
+
+.Sagsnii_heseg > .order_button {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 0.5rem;
+}
+
+.Sagsnii_heseg .order_button > .overral_price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.Sagsnii_heseg .order_button > button {
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 0.5rem 0 0.5rem 0;
+  color: var(--white_color);
+  border-radius: 1.2rem;
+  background-color: var(--main_color);
+  border-style: none;
 }
 
 /* Media query */
-@media only screen and (max-width: 1023px) and (min-width:768px) {
-	.container {
-		display: grid;
-		grid-template-rows: auto auto;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		align-items: var(--align_items);
-		justify-items: center;
-	}
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: var(--align_items);
+    justify-items: center;
+  }
 
-	/*Deed taliin processiig aguulagch heseg*/
-	.process {
-		max-width: 40%;
-		max-height: 15%;
-		width: 100%;
-		margin: 8% auto 10% auto;
-		display: block;
-		grid-column: 1 / 3;
-		grid-row: 1;
-		font-size: 90%;
-	}
+  /*Deed taliin processiig aguulagch heseg*/
+  .process {
+    max-width: 40%;
+    max-height: 15%;
+    width: 100%;
+    margin: 8% auto 10% auto;
+    display: block;
+    grid-column: 1 / 3;
+    grid-row: 1;
+    font-size: 90%;
+  }
 
-	/*Hurgeltiin zurag*/
-	.steps>#Ehnii_version {
-		width: 22%;
-	}
+  /*Hurgeltiin zurag*/
+  .steps > #Ehnii_version {
+    width: 22%;
+  }
 
-	/*Hurgelt bolon Tulburiin heseg*/
-	#Hurgeltiin_heseg {
-		grid-row: 2;
-		grid-column: 1;
-		opacity: 1;
-	}
+  /*Hurgelt bolon Tulburiin heseg*/
+  #Hurgeltiin_heseg {
+    grid-row: 2;
+    grid-column: 1;
+    opacity: 1;
+  }
 
-	.Tulburiin_heseg {
-		grid-row: 2;
-		grid-column: 2;
-	}
+  .Tulburiin_heseg {
+    grid-row: 2;
+    grid-column: 2;
+  }
 
-	.Sagsnii_heseg{
-		display: none;
-	}
+  .Sagsnii_heseg {
+    display: none;
+  }
 
-	/*Hurgelt bolon Tulburiin heseg*/
-	#Hurgeltiin_heseg,
-	.Tulburiin_heseg {
-		width: 85%;
-		height: 105%;
-		background: var(--column_background);
-		padding: 2.4rem 8% 0 8%;
-		margin: 0 1px;
-	}
+  /*Hurgelt bolon Tulburiin heseg*/
+  #Hurgeltiin_heseg,
+  .Tulburiin_heseg {
+    width: 85%;
+    height: 105%;
+    background: var(--column_background);
+    padding: 2.4rem 8% 0 8%;
+    margin: 0 1px;
+  }
 
-	#Butsah_button {
-		display: none;
-	}
+  #Butsah_button {
+    display: none;
+  }
 
-	#Urgeljluuleh_button {
-		background-color: var(--process_background);
-		border: 1px solid #EE3A43;
-		border-radius: var(--border_radius);
-		cursor: pointer;
-		color: var(--white_color);
-		margin: 0 auto 0 auto;
-		display: block;
-		grid-column: 1 / 3;
-	}
+  #Urgeljluuleh_button {
+    background-color: var(--process_background);
+    border: 1px solid #ee3a43;
+    border-radius: var(--border_radius);
+    cursor: pointer;
+    color: var(--white_color);
+    margin: 0 auto 0 auto;
+    display: block;
+    grid-column: 1 / 3;
+  }
 
-	/*3 zurgiig aguulagch section*/
-	.Tulbur {
-		padding-top: 8%;
-	}
+  /*3 zurgiig aguulagch section*/
+  .Tulbur {
+    padding-top: 8%;
+  }
 
-	/*Qpay heseg*/
-	.Tulbur>.Zurag>picture>a>#Qpay {
-		width: 6.688rem;
-		height: 6.688rem;
-	}
+  /*Qpay heseg*/
+  .Tulbur > .Zurag > picture > a > #Qpay {
+    width: 6.688rem;
+    height: 6.688rem;
+  }
 
-	/*Applepay heseg*/
-	.Tulbur>.Zurag>picture>a>#ApplePay {
-		margin-top: 3%;
-		width: 11.5rem;
-		height: 6.813rem;
-	}
+  /*Applepay heseg*/
+  .Tulbur > .Zurag > picture > a > #ApplePay {
+    margin-top: 3%;
+    width: 11.5rem;
+    height: 6.813rem;
+  }
 
-	/*Creditcard heseg*/
-	.Tulbur>.Zurag>picture>a>#CreditCard {
-		margin-top: 3%;
-		width: 8rem;
-		height: 5.688rem;
-	}
+  /*Creditcard heseg*/
+  .Tulbur > .Zurag > picture > a > #CreditCard {
+    margin-top: 3%;
+    width: 8rem;
+    height: 5.688rem;
+  }
 
-	/*Nitt uniin tovch*/
-	.Niit_une>button {
-		margin-bottom: 8%;
-	}
+  /*Nitt uniin tovch*/
+  .Niit_une > button {
+    margin-bottom: 8%;
+  }
 }
 
 @media only screen and (max-width: 767.9px) {
+  /*Aguulagch heseg*/
+  .container {
+    /* margin: 4.25rem 10px 4rem 10px; */
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    row-gap: 3.5%;
+    align-items: var(--align_items);
+    justify-items: center;
+    margin-bottom: 10%;
+  }
 
-	/*Aguulagch heseg*/
-	.container {
-		/* margin: 4.25rem 10px 4rem 10px; */
-		display: grid;
-		grid-template-rows: auto auto;
-		grid-template-columns: repeat(1, minmax(0, 1fr));
-		row-gap: 3.5%;
-		align-items: var(--align_items);
-		justify-items: center;
-		margin-bottom: 10%;
-	}
+  /*Processiin heseg*/
+  .process {
+    display: none;
+  }
 
-	/*Processiin heseg*/
-	.process {
-		display: none;
-	}
+  /*Hurgeltiin heseg*/
+  #Hurgeltiin_heseg {
+    grid-row: 1;
+    opacity: 1;
+    margin-top: 40px;
+  }
 
-	/*Hurgeltiin heseg*/
-	#Hurgeltiin_heseg {
-		grid-row: 1;
-		opacity: 1;
-		margin-top: 40px;
-	}
+  /*Tulburiin heseg*/
+  .Tulburiin_heseg {
+    margin-bottom: 1.25rem;
+    grid-row: 2;
+  }
 
-	/*Tulburiin heseg*/
-	.Tulburiin_heseg {
-		margin-bottom: 1.25rem;
-		grid-row: 2;
-	}
+  .Sagsnii_heseg {
+    display: none;
+  }
 
-	.Sagsnii_heseg{
-		display: none;
-	}
+  /*Hurgelt bolon tulburiin heseg*/
+  #Hurgeltiin_heseg,
+  .Tulburiin_heseg {
+    /* width: 75%; */
+    max-width: 370px;
+    height: 100%;
+    padding: 1rem 6% 1rem 6%;
+    /* display: none; */
+  }
 
-	/*Hurgelt bolon tulburiin heseg*/
-	#Hurgeltiin_heseg,
-	.Tulburiin_heseg {
-		/* width: 75%; */
-		max-width: 370px;
-		height: 100%;
-		padding: 1rem 6% 1rem 6%;
-		/* display: none; */
-	}
+  /*Hurgeltiin ner hayg avah heseg*/
+  .Hurgeltiin_ner_hayg > form {
+    row-gap: 1%;
+  }
 
-	/*Hurgeltiin ner hayg avah heseg*/
-	.Hurgeltiin_ner_hayg>form {
-		row-gap: 1%;
-	}
+  /*Burtgeliin label section*/
+  .Burtgel > label {
+    margin-right: 20%;
+  }
 
-	/*Burtgeliin label section*/
-	.Burtgel>label {
-		margin-right: 20%;
-	}
+  /*Huviin medeelel.Ner hayg geh met*/
+  .Hurgeltiin_ner_hayg > form > section > label {
+    width: 1.138rem;
+    height: 0.25rem;
+  }
 
-	/*Huviin medeelel.Ner hayg geh met*/
-	.Hurgeltiin_ner_hayg>form>section>label {
-		width: 1.138rem;
-		height: 0.25rem;
-	}
+  /*Ner utas zergiin input*/
+  /*Duureg, horoogiin input*/
+  .Hurgeltiin_ner_hayg > form > section > input,
+  .Hurgeltiin_ner_hayg > form > section > #Duureg_id,
+  .Hurgeltiin_ner_hayg > form > section > #Horoo_id {
+    margin-left: 1.25rem;
+  }
 
-	/*Ner utas zergiin input*/
-	/*Duureg, horoogiin input*/
-	.Hurgeltiin_ner_hayg>form>section>input,
-	.Hurgeltiin_ner_hayg>form>section>#Duureg_id,
-	.Hurgeltiin_ner_hayg>form>section>#Horoo_id {
-		margin-left: 1.25rem;
-	}
+  /*Hurgeltiin urgeljluuleh tovch*/
+  .Hurgeltiin_ner_hayg > form > .Hurgeltiin_tovch > #Urgeljluuleh_button {
+    padding: 5% 10%;
+    background-color: var(--process_background);
+    border: 1px solid #ee3a43;
+    border-radius: var(--border_radius);
+    cursor: pointer;
+    color: var(--white_color);
+    grid-column: 1/3;
+    margin: 0 auto 0 auto;
+    display: block;
+  }
 
-	/*Hurgeltiin urgeljluuleh tovch*/
-	.Hurgeltiin_ner_hayg>form>.Hurgeltiin_tovch>#Urgeljluuleh_button {
-		padding: 5% 10%;
-		background-color: var(--process_background);
-		border: 1px solid #EE3A43;
-		border-radius: var(--border_radius);
-		cursor: pointer;
-		color: var(--white_color);
-		grid-column: 1/3;
-		margin: 0 auto 0 auto;
-		display: block;
-	}
+  /*Nitt uniin tovch*/
+  .Niit_une > button {
+    padding: 3% 8%;
+  }
 
-	/*Nitt uniin tovch*/
-	.Niit_une>button {
-		padding: 3% 8%;
-	}
+  #Butsah_button {
+    display: none;
+  }
 
-	#Butsah_button {
-		display: none;
-	}
+  /*Tulburiin hesgiin section*/
+  .Tulbur {
+    padding-top: 10px;
+    row-gap: 1px;
+  }
 
-	/*Tulburiin hesgiin section*/
-	.Tulbur {
-		padding-top: 10px;
-		row-gap: 1px;
-	}
+  /*3 zurag aguulsn section*/
+  .Tulbur > .Zurag {
+    /* margin-top: 5%; */
+    row-gap: 1px;
+  }
 
-	/*3 zurag aguulsn section*/
-	.Tulbur>.Zurag {
-		/* margin-top: 5%; */
-		row-gap: 1px;
-	}
+  /*Qpay heseg*/
+  .Tulbur > .Zurag > picture > a > #Qpay {
+    width: 5.688rem;
+    height: 5.688rem;
+  }
 
-	/*Qpay heseg*/
-	.Tulbur>.Zurag>picture>a>#Qpay {
-		width: 5.688rem;
-		height: 5.688rem;
-	}
+  /*Applepay heseg*/
+  .Tulbur > .Zurag > picture > a > #ApplePay {
+    width: 10.5rem;
+    height: 6.25rem;
+  }
 
-	/*Applepay heseg*/
-	.Tulbur>.Zurag>picture>a>#ApplePay {
-		width: 10.5rem;
-		height: 6.25rem;
-	}
-
-	/*Creditcard heseg*/
-	.Tulbur>.Zurag>picture>a>#CreditCard {
-		width: 7rem;
-		height: 4.938rem;
-	}
+  /*Creditcard heseg*/
+  .Tulbur > .Zurag > picture > a > #CreditCard {
+    width: 7rem;
+    height: 4.938rem;
+  }
 }

@@ -1,19 +1,25 @@
-const search_value = window.location.search;
-console.log("Utga: ", search_value);
+import a from "../modules/product.js";
 
-const urlParams = new URLSearchParams(search_value);
+const product = new a("http://localhost:4000/api/");
 
-const value = urlParams.get("category");
+const queryParams = new URLSearchParams(window.location.search);
 
+const category = queryParams.get("category");
 
-
-if(value == "sides"){
-    window.location.href = 'product_nemelt.html';
-}
-else if(value == "deals" ) {
-    window.location.href = 'product_bagts.html';
-}
-
-else if(value == "pizzas"){
-     window.location.href = 'product_pizza.html';
+switch (category) {
+  case "drink":
+    product.download(category);
+    break;
+  case "deals":
+    product.download(category);
+    break;
+  case "sides":
+    product.download(category);
+    break;
+  case "pizzas":
+    product.download(category);
+    break;
+  default:
+    product.download("deals");
+    break;
 }
