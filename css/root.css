@@ -47,12 +47,12 @@
   --information_margin_bottom: 1rem;
   --black_color: black;
   --white_color: white;
-  --objective_bg: red;
-  --objective_bgB: black;
+  --about_text_color: #000;
   /* products */
   --product_fonts: "Mulish", sans-serif;
   --product_color: #4a4444;
   --product_font_size: 1rem;
+  --about_bgcolor: #eeeeee;
 
   /*Order*/
   --process_background: #ee3a43;
@@ -61,6 +61,4 @@
   --black_background: #000000;
   --border_radius: 0.938rem;
   --align_items: center;
-
- 
 }

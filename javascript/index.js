@@ -1,8 +1,6 @@
 function bottomreveal() {
   var reveals = document.querySelectorAll(".news2_part, #odd_pic, .news1_part");
 
-  console.log(reveals);
-
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
@@ -23,8 +21,6 @@ window.addEventListener("scroll", bottomreveal);
 function leftReveal() {
   var reveals = document.querySelectorAll(".news1_part");
 
-  console.log(reveals);
-
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
     var elementTop = reveals[i].getBoundingClientRect().top;
@@ -44,8 +40,6 @@ window.addEventListener("scroll", leftReveal);
 
 function rightReveal() {
   var reveals = document.querySelectorAll(" .pizza_pic");
-
-  console.log(reveals);
 
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;

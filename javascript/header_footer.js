@@ -129,20 +129,21 @@ class Footer extends HTMLElement {
       <section class="comment">
         <h3>САНАЛТ ХҮСЭЛТ</h3>
 
-        <form>
+        <section>
           <section class="input1">
             <div>
               <label for="email">Эмайл</label>
               <input
                 type="email"
                 name="mail"
+                id = "email"
                 placeholder="Ochirsukh@email.com"
               />
               <br />
             </div>
             <div>
               <label for="phone">Утас</label>
-              <input type="text" name="mail" placeholder="+976 ########" />
+              <input type="text" name="mail" class ="phone" placeholder="+976 ########" />
               <br />
             </div>
           </section>
@@ -156,11 +157,12 @@ class Footer extends HTMLElement {
                 class="texting"
               ></textarea>
             </div>
-            <div class="button">
+            <div class="button", id="feedbackBtn">
               <input type="submit" value="Илгээх" />
             </div>
+         
           </section>
-        </form>
+        </section>
       </section>
     </section>
 
@@ -172,6 +174,29 @@ class Footer extends HTMLElement {
     </section>
   </footer>
     `;
+  }
+  connectedCallback() {
+    const feedBtn = document.getElementById("feedbackBtn");
+    feedBtn.addEventListener("click", () => {
+      console.log("orlooo");
+      const email = document.getElementById("email").value;
+      const phone = document.getElementsByClassName("phone")[0].value;
+      const message = document.getElementById("message").value;
+      const data = { email, phone, message };
+      console.log(email, phone, message);
+
+      const succ = fetch("http://localhost:3000/feedback", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      if (succ.ok) {
+        console.log("success");
+      } else console.log("not");
+    });
+    // console.log(feedBackButton);
   }
 }
 

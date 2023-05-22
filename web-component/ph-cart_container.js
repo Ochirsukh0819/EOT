@@ -78,13 +78,13 @@ class PhCartContainer extends HTMLElement {
       );
 
       // localStorage ruu ogogdloo hadgalj bgaa eseh
-      const event1 = new CustomEvent("saveLocalStorage", {
-        detail: {
-          title: title,
-          price: price,
-        },
-      });
-      document.dispatchEvent(event1);
+        const event1 = new CustomEvent("saveLocalStorage", {
+          detail: {
+            title: title,
+            price: price,
+          },
+        });
+        document.dispatchEvent(event1);
     }
   }
 
@@ -96,7 +96,9 @@ class PhCartContainer extends HTMLElement {
 
   disconnectedCallback() {}
 
-  attributeChangedCallback(name, oldVal, newVal) {}
+  attributeChangedCallback(name, oldVal, newVal) {
+    
+  }
 
   adoptedCallback() {}
 }

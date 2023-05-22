@@ -82,14 +82,6 @@ class PhAbout extends HTMLElement {
           flex-direction: row;
           justify-content: space-evenly;
         }
-        
-          .neg_medee > picture  > sad{
-          background-color: var(--objective_bg);
-          width: 15rem;
-          height: auto;
-          aspect-ratio: initial;
-        }
-
          .neg_medee > section {
           
           width: var(--information_width);
@@ -133,10 +125,11 @@ class PhAbout extends HTMLElement {
       .main_objective {
         width: 23rem;
         height: 14rem;
-        background-color: #eeeeee;
+        background-color: var(--about_bgcolor);
         margin: 10% 0 10% 0;
         padding: 0.5rem;
         border-radius: 1rem;
+        color: var(--about_text_color);
       }
       .main_objective > section {
         display: flex;
