@@ -17,29 +17,29 @@ class PhCartContainer extends HTMLElement {
   constructor() {
     super();
 
-    this.innerHTML = ` <aside class="cart">
-        <section class="caption">
-          <h2>Таны сагс</h2>
-        </section>
+    this.innerHTML = ` <aside class="cart" id="Sagsnii_heseg">
+    <section class="caption">
+      <h2>Таны сагс</h2>
+    </section>
 
-        <section class="cart_empty">
-          <picture>
-            <img src="./aboutUs_image/cart.svg" alt="hooson" />
-          </picture>
-          <p>Таны сагс хоосон байна</p>
-        </section>
+    <section class="cart_empty">
+      <picture>
+        <img src="./aboutUs_image/cart.svg" alt="hooson" />
+      </picture>
+      <p>Таны сагс хоосон байна</p>
+    </section>
 
-        <section class="cart_full">
-        </section>
+    <section class="cart_full">
+    </section>
 
-        <section class="order_button">
-          <section class="overral_price">
-            <p>Нийт</p>
-            <p id="total_price">0.00₮</p>
-          </section>
-          <button type="submit">Захиалах</button>
-        </section>
-      </aside>`;
+    <section class="order_button">
+      <section class="overral_price">
+        <p>Нийт</p>
+        <p id="total_price">0.00₮</p>
+      </section>
+      <button id="Sagsnii_tovch" type="submit">Захиалах</button>
+    </section>
+  </aside>`;
   }
 
   connectedCallback() {
@@ -61,6 +61,31 @@ class PhCartContainer extends HTMLElement {
       "afterend",
       `<ph-localstorage></ph-localstorage>`
     );
+
+    console.log(document.getElementById("Sagsnii_tovch"))
+    const Sagsnii_tovch = document.getElementById("Sagsnii_tovch");
+    const SagsniiHeseg = document.getElementById("Sagsnii_heseg");
+    Sagsnii_tovch.addEventListener("click", () => {
+      /* Delivery zurgiig yvuulj baina */
+      const HoyrLuu = "left: 25%;";
+      Neg.style = HoyrLuu;
+      /* Hurgeltiin hesgiin buttong uurchilj baigaa n */
+      Urgeljluuleh_button.style = `background-color:#EE3A43;
+        color: #FFFFFF;
+      border: 1px solid #EE3A43;
+      cursor: pointer;
+        `;
+      /* Hurgeltiin hesgiin opacityg uurchilj baigaa n */
+      HurgeltiinHeseg.style = "opacity: 1;";
+      
+      /*Buttonguudiig disable bolgoj baina */
+      // Sagsnii_tovch.disabled = true;
+      Butsah_button.disabled = false;
+      Urgeljluuleh_button.disabled = false;
+      Tulburiin_butsah.disabled = true;
+      /*Circle iin dugaariig todruulj baina */
+      circle_two.style = "color:#FFFFFF;";
+    });
   }
 
   // cart container component ooroo cart component renderlej bna
