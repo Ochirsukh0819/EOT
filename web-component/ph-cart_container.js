@@ -61,31 +61,6 @@ class PhCartContainer extends HTMLElement {
       "afterend",
       `<ph-localstorage></ph-localstorage>`
     );
-
-    console.log(document.getElementById("Sagsnii_tovch"))
-    const Sagsnii_tovch = document.getElementById("Sagsnii_tovch");
-    const SagsniiHeseg = document.getElementById("Sagsnii_heseg");
-    Sagsnii_tovch.addEventListener("click", () => {
-      /* Delivery zurgiig yvuulj baina */
-      const HoyrLuu = "left: 25%;";
-      Neg.style = HoyrLuu;
-      /* Hurgeltiin hesgiin buttong uurchilj baigaa n */
-      Urgeljluuleh_button.style = `background-color:#EE3A43;
-        color: #FFFFFF;
-      border: 1px solid #EE3A43;
-      cursor: pointer;
-        `;
-      /* Hurgeltiin hesgiin opacityg uurchilj baigaa n */
-      HurgeltiinHeseg.style = "opacity: 1;";
-      
-      /*Buttonguudiig disable bolgoj baina */
-      // Sagsnii_tovch.disabled = true;
-      Butsah_button.disabled = false;
-      Urgeljluuleh_button.disabled = false;
-      Tulburiin_butsah.disabled = true;
-      /*Circle iin dugaariig todruulj baina */
-      circle_two.style = "color:#FFFFFF;";
-    });
   }
 
   // cart container component ooroo cart component renderlej bna
